@@ -1,0 +1,3000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"0ff6cce4-fd3f-4804-92fc-725b9f7550ac",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>karate.tests.put-employees</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">7</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>dev1</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-08-08 12:12:05 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:16]"><span>[1.1:16]</span> <span>PUT /employees errors - PUT request with non-UUID type id (string format)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:16]"><span>[1.2:16]</span> <span>PUT /employees errors - PUT request with non-UUID type id (numeric format)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.3:16]"><span>[1.3:16]</span> <span>PUT /employees errors - PUT request with non-UUID type id (empty string)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.4:16]"><span>[1.4:16]</span> <span>PUT /employees errors - PUT request with invalid UUID type id (non-UUID format)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.5:16]"><span>[1.5:16]</span> <span>PUT /employees errors - PUT request with invalid UUID type id</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.6:16]"><span>[1.6:16]</span> <span>PUT /employees errors - PUT request with dependants greater than 32</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.7:16]"><span>[1.7:16]</span> <span>PUT /employees errors - PUT request with dependants less than 0</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">karate/tests/put-employees.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">PUT /employees/{id}</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tests=put-employees</a><a class="badge badge-primary" href="karate-tags.html">tests=employees</a><a class="badge badge-primary" href="karate-tags.html">test=put-employees-errors</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:16]</span>
+                <span class="scenario-name">PUT /employees errors - PUT request with non-UUID type id (string format)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>624</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>callonce read(endpoints.postEmployees) {expectedStatus: 200, requestBody: { firstName:&quot;Killy&quot;,lastName:&quot;Williams&quot;,dependants: 2}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">349</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.6">12:12:03.746 &lt;&lt; lock released, cached callonce: read(endpoints.postEmployees) {expectedStatus: 200, requestBody: { firstName:&quot;Killy&quot;,lastName:&quot;Williams&quot;,dependants: 2}}
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">karate.endpoints.employees</div>
+      </div>
+      <div class="time-cell passed">341</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.6.0.call.0.5">12:12:03.402 &gt;&gt; lock acquired, begin callonce: read(endpoints.postEmployees) {expectedStatus: 200, requestBody: { firstName:&quot;Killy&quot;,lastName:&quot;Williams&quot;,dependants: 2}}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.32">
+      <div class="step-ref bg-step">32</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;Prod&#39;,&#39;api&#39;, &#39;employees&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.33">
+      <div class="step-ref bg-step">33</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestHeaders&#39;, defaultAuth)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.34">
+      <div class="step-ref bg-step">34</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request karate.get(&#39;requestBody&#39;, {})</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.35">
+      <div class="step-ref bg-step">35</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">339</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.6.0.call.0.35">12:12:03.404 request:
+1 &gt; POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;firstName&quot;: &quot;Killy&quot;,
+  &quot;lastName&quot;: &quot;Williams&quot;,
+  &quot;dependants&quot;: 2
+}
+
+
+12:12:03.742 response time in milliseconds: 337
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 273
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:03 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee53-1e19bbb24a3b5d5163bf69bc;Parent=7d4b53268d1fc8aa;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: de75f853-cf91-4f8c-9a11-fb2ba7028c1b
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMotHFq6oAMEYVw=
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 7388b83022a79421f484bdac704f938a.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: ObcSG6Y-FtzQwTbScflTsxdwDCOF5dQO_LTk630ij2AUArrNDdnLHQ==
+{
+  &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+  &quot;sortKey&quot;: &quot;74b989c4-dd85-4a93-90e1-cb3701f3a271&quot;,
+  &quot;username&quot;: &quot;TestUser407&quot;,
+  &quot;id&quot;: &quot;74b989c4-dd85-4a93-90e1-cb3701f3a271&quot;,
+  &quot;firstName&quot;: &quot;Killy&quot;,
+  &quot;lastName&quot;: &quot;Williams&quot;,
+  &quot;dependants&quot;: 2,
+  &quot;salary&quot;: 52000,
+  &quot;gross&quot;: 2000,
+  &quot;benefitsCost&quot;: 76.92308,
+  &quot;net&quot;: 1923.0769
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.36">
+      <div class="step-ref bg-step">36</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match responseStatus == karate.get(&#39;expectedStatus&#39;, 200)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1.1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def employeeId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure afterFeature = function() { karate.call(endpoints.deleteEmployeesId, {employeeId: employeeId, expectedStatus: 200})}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(endpoints.putEmployeesId) {expectedStatus: 405, requestBody: {&quot;firstName&quot;:&quot;any&quot;,&quot;lastName&quot;:&quot;any&quot;,&quot;dependants&quot;:1,&quot;id&quot;:&quot;1234&quot;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">273</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.13.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">karate.endpoints.employees</div>
+      </div>
+      <div class="time-cell passed">269</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.13.0.call">
+    <div class="step-container" id="1.13.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.13.0.call">
+    <div class="step-container" id="1.13.0.call.0.40">
+      <div class="step-ref passed">40</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;Prod&#39;,&#39;api&#39;, &#39;employees&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.13.0.call">
+    <div class="step-container" id="1.13.0.call.0.41">
+      <div class="step-ref passed">41</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestHeaders&#39;, defaultAuth)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.13.0.call">
+    <div class="step-container" id="1.13.0.call.0.42">
+      <div class="step-ref passed">42</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request karate.get(&#39;requestBody&#39;, {})</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.13.0.call">
+    <div class="step-container" id="1.13.0.call.0.43">
+      <div class="step-ref passed">43</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">266</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13.0.call.0.43">12:12:03.758 request:
+1 &gt; PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 63
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;firstName&quot;: &quot;any&quot;,
+  &quot;lastName&quot;: &quot;any&quot;,
+  &quot;dependants&quot;: 1,
+  &quot;id&quot;: &quot;1234&quot;
+}
+
+
+12:12:04.023 response time in milliseconds: 264
+1 &lt; 405
+1 &lt; Content-Length: 0
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:04 GMT
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-RequestId: bc7e6ecd-d835-4f82-8f97-8e34bef6f64f
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; Allow: GET
+1 &lt; x-amz-apigw-id: cMotKFZOIAMEUrQ=
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: -1
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee53-114d59cf3425125e5124a2df;Parent=03e3cd5d6adae4f3;Sampled=0;lineage=da2a2ef2:0
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 de54ac522d01ec848fc41c33d7d26410.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: ljlU-Vgcvirs7woPcl1LJIL4iThup1_Ol1-8_H2JOkPjBZnOc_1Xcw==
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.13.0.call">
+    <div class="step-container" id="1.13.0.call.0.44">
+      <div class="step-ref passed">44</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match responseStatus == karate.get(&#39;expectedStatus&#39;, 200)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response == expectedResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tests=put-employees</a><a class="badge badge-primary" href="karate-tags.html">tests=employees</a><a class="badge badge-primary" href="karate-tags.html">test=put-employees-errors</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:16]</span>
+                <span class="scenario-name">PUT /employees errors - PUT request with non-UUID type id (numeric format)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>215</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>callonce read(endpoints.postEmployees) {expectedStatus: 200, requestBody: { firstName:&quot;Killy&quot;,lastName:&quot;Williams&quot;,dependants: 2}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def employeeId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure afterFeature = function() { karate.call(endpoints.deleteEmployeesId, {employeeId: employeeId, expectedStatus: 200})}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(endpoints.putEmployeesId) {expectedStatus: 405, requestBody: {&quot;firstName&quot;:&quot;any&quot;,&quot;lastName&quot;:&quot;any&quot;,&quot;dependants&quot;:1,&quot;id&quot;:1234}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">212</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="2.13.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">karate.endpoints.employees</div>
+      </div>
+      <div class="time-cell passed">209</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.13.0.call">
+    <div class="step-container" id="2.13.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.13.0.call">
+    <div class="step-container" id="2.13.0.call.0.40">
+      <div class="step-ref passed">40</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;Prod&#39;,&#39;api&#39;, &#39;employees&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.13.0.call">
+    <div class="step-container" id="2.13.0.call.0.41">
+      <div class="step-ref passed">41</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestHeaders&#39;, defaultAuth)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.13.0.call">
+    <div class="step-container" id="2.13.0.call.0.42">
+      <div class="step-ref passed">42</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request karate.get(&#39;requestBody&#39;, {})</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.13.0.call">
+    <div class="step-container" id="2.13.0.call.0.43">
+      <div class="step-ref passed">43</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">208</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.13.0.call.0.43">12:12:04.036 request:
+1 &gt; PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 61
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;firstName&quot;: &quot;any&quot;,
+  &quot;lastName&quot;: &quot;any&quot;,
+  &quot;dependants&quot;: 1,
+  &quot;id&quot;: 1234
+}
+
+
+12:12:04.243 response time in milliseconds: 206
+1 &lt; 405
+1 &lt; Content-Length: 0
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:04 GMT
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-RequestId: 767c7440-c3c0-45d4-a2f9-91103d2e0499
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; Allow: GET
+1 &lt; x-amz-apigw-id: cMotNGlmIAMEWjg=
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: -1
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee54-5fa710b91446b881430d06c3;Parent=5fffc2c451795624;Sampled=0;lineage=da2a2ef2:0
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 d3db9a2e1a3d2fa6beb3724d68d89dc8.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: RlE7Vjp-MUF6HKZ9w4mRzxKVDp-rds26cQ_svvCU6IDYlM0d7BEEJQ==
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.13.0.call">
+    <div class="step-container" id="2.13.0.call.0.44">
+      <div class="step-ref passed">44</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match responseStatus == karate.get(&#39;expectedStatus&#39;, 200)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response == expectedResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.3:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tests=put-employees</a><a class="badge badge-primary" href="karate-tags.html">tests=employees</a><a class="badge badge-primary" href="karate-tags.html">test=put-employees-errors</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.3:16]</span>
+                <span class="scenario-name">PUT /employees errors - PUT request with non-UUID type id (empty string)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>219</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.3:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.3:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>callonce read(endpoints.postEmployees) {expectedStatus: 200, requestBody: { firstName:&quot;Killy&quot;,lastName:&quot;Williams&quot;,dependants: 2}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def employeeId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure afterFeature = function() { karate.call(endpoints.deleteEmployeesId, {employeeId: employeeId, expectedStatus: 200})}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(endpoints.putEmployeesId) {expectedStatus: 405, requestBody: {&quot;firstName&quot;:&quot;any&quot;,&quot;lastName&quot;:&quot;any&quot;,&quot;dependants&quot;:1,&quot;id&quot;:&quot;&quot;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">216</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="3.13.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">karate.endpoints.employees</div>
+      </div>
+      <div class="time-cell passed">213</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.13.0.call">
+    <div class="step-container" id="3.13.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.13.0.call">
+    <div class="step-container" id="3.13.0.call.0.40">
+      <div class="step-ref passed">40</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;Prod&#39;,&#39;api&#39;, &#39;employees&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.13.0.call">
+    <div class="step-container" id="3.13.0.call.0.41">
+      <div class="step-ref passed">41</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestHeaders&#39;, defaultAuth)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.13.0.call">
+    <div class="step-container" id="3.13.0.call.0.42">
+      <div class="step-ref passed">42</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request karate.get(&#39;requestBody&#39;, {})</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.13.0.call">
+    <div class="step-container" id="3.13.0.call.0.43">
+      <div class="step-ref passed">43</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">212</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.13.0.call.0.43">12:12:04.253 request:
+1 &gt; PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 59
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;firstName&quot;: &quot;any&quot;,
+  &quot;lastName&quot;: &quot;any&quot;,
+  &quot;dependants&quot;: 1,
+  &quot;id&quot;: &quot;&quot;
+}
+
+
+12:12:04.464 response time in milliseconds: 209
+1 &lt; 405
+1 &lt; Content-Length: 0
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:04 GMT
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-RequestId: efa86e7e-ae74-40f2-aa87-b6ac592ef27a
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; Allow: GET
+1 &lt; x-amz-apigw-id: cMotPGGMoAMEM8w=
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: -1
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee54-51a0e3045be195567fb3dff3;Parent=0395503082f5bb95;Sampled=0;lineage=da2a2ef2:0
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 c942cfe30baa723bd56d66d18e668b12.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: zpK3kuKtZxGh93GvcXf4Vxv1JbdZt7mW8Oha-PpFP_BQi79faZE0gA==
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.13.0.call">
+    <div class="step-container" id="3.13.0.call.0.44">
+      <div class="step-ref passed">44</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match responseStatus == karate.get(&#39;expectedStatus&#39;, 200)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response == expectedResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.4:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tests=put-employees</a><a class="badge badge-primary" href="karate-tags.html">tests=employees</a><a class="badge badge-primary" href="karate-tags.html">test=put-employees-errors</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.4:16]</span>
+                <span class="scenario-name">PUT /employees errors - PUT request with invalid UUID type id (non-UUID format)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>276</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.4:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.4:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>callonce read(endpoints.postEmployees) {expectedStatus: 200, requestBody: { firstName:&quot;Killy&quot;,lastName:&quot;Williams&quot;,dependants: 2}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.4:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def employeeId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.4:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure afterFeature = function() { karate.call(endpoints.deleteEmployeesId, {employeeId: employeeId, expectedStatus: 200})}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(endpoints.putEmployeesId) {expectedStatus: 405, requestBody: {&quot;firstName&quot;:&quot;any&quot;,&quot;lastName&quot;:&quot;any&quot;,&quot;dependants&quot;:1,&quot;id&quot;:&quot;375ceaca-b04c-4624-bbxx-7183dd5895xx&quot;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">273</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="4.13.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">karate.endpoints.employees</div>
+      </div>
+      <div class="time-cell passed">270</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.13.0.call">
+    <div class="step-container" id="4.13.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.13.0.call">
+    <div class="step-container" id="4.13.0.call.0.40">
+      <div class="step-ref passed">40</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;Prod&#39;,&#39;api&#39;, &#39;employees&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.13.0.call">
+    <div class="step-container" id="4.13.0.call.0.41">
+      <div class="step-ref passed">41</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestHeaders&#39;, defaultAuth)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.13.0.call">
+    <div class="step-container" id="4.13.0.call.0.42">
+      <div class="step-ref passed">42</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request karate.get(&#39;requestBody&#39;, {})</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.13.0.call">
+    <div class="step-container" id="4.13.0.call.0.43">
+      <div class="step-ref passed">43</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">269</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.13.0.call.0.43">12:12:04.475 request:
+1 &gt; PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 95
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;firstName&quot;: &quot;any&quot;,
+  &quot;lastName&quot;: &quot;any&quot;,
+  &quot;dependants&quot;: 1,
+  &quot;id&quot;: &quot;375ceaca-b04c-4624-bbxx-7183dd5895xx&quot;
+}
+
+
+12:12:04.742 response time in milliseconds: 266
+1 &lt; 405
+1 &lt; Content-Length: 0
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:04 GMT
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-RequestId: 0410f602-9b98-4502-97f4-9af17ef505c8
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; Allow: GET
+1 &lt; x-amz-apigw-id: cMotRHVPIAMEj5Q=
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: -1
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee54-49757cd93d04e0ee072dcab1;Parent=3661d2be987aa4ea;Sampled=0;lineage=da2a2ef2:0
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 652a36cca524228b11a07aa4660a0022.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: G2HCTIRDatFpCqWHUSthrIKzUV_kUXFEZgYnElOlkgpVM9y-aTgXQg==
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.13.0.call">
+    <div class="step-container" id="4.13.0.call.0.44">
+      <div class="step-ref passed">44</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match responseStatus == karate.get(&#39;expectedStatus&#39;, 200)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response == expectedResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.5:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tests=put-employees</a><a class="badge badge-primary" href="karate-tags.html">tests=employees</a><a class="badge badge-primary" href="karate-tags.html">test=put-employees-errors</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.5:16]</span>
+                <span class="scenario-name">PUT /employees errors - PUT request with invalid UUID type id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>343</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.5:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.5:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>callonce read(endpoints.postEmployees) {expectedStatus: 200, requestBody: { firstName:&quot;Killy&quot;,lastName:&quot;Williams&quot;,dependants: 2}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.5:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def employeeId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.5:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure afterFeature = function() { karate.call(endpoints.deleteEmployeesId, {employeeId: employeeId, expectedStatus: 200})}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(endpoints.putEmployeesId) {expectedStatus: 200, requestBody: {&quot;firstName&quot;:&quot;any&quot;,&quot;lastName&quot;:&quot;any&quot;,&quot;dependants&quot;:1,&quot;id&quot;:&quot;375ceaca-b04c-4624-baaa-7183dd5895dd&quot;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">340</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="5.13.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">karate.endpoints.employees</div>
+      </div>
+      <div class="time-cell passed">337</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.13.0.call">
+    <div class="step-container" id="5.13.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.13.0.call">
+    <div class="step-container" id="5.13.0.call.0.40">
+      <div class="step-ref passed">40</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;Prod&#39;,&#39;api&#39;, &#39;employees&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.13.0.call">
+    <div class="step-container" id="5.13.0.call.0.41">
+      <div class="step-ref passed">41</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestHeaders&#39;, defaultAuth)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.13.0.call">
+    <div class="step-container" id="5.13.0.call.0.42">
+      <div class="step-ref passed">42</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request karate.get(&#39;requestBody&#39;, {})</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.13.0.call">
+    <div class="step-container" id="5.13.0.call.0.43">
+      <div class="step-ref passed">43</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">335</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.13.0.call.0.43">12:12:04.755 request:
+1 &gt; PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 95
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;firstName&quot;: &quot;any&quot;,
+  &quot;lastName&quot;: &quot;any&quot;,
+  &quot;dependants&quot;: 1,
+  &quot;id&quot;: &quot;375ceaca-b04c-4624-baaa-7183dd5895dd&quot;
+}
+
+
+12:12:05.089 response time in milliseconds: 332
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 259
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:05 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee54-573131671bb1f9730e57b76d;Parent=355cfabfdff9e18f;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: 81fe2dda-a14d-4392-a07c-aa829905315d
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMotUGU6oAMEH-w=
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 05f5208e50ebe19c944748fa098c71e0.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: yzE_fj4lzf2Kpl43wgOVEjr_jnuXe3D4R6F-CdGxsDML8TaljJYnBw==
+{
+  &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+  &quot;sortKey&quot;: &quot;1963c39e-edfd-41ea-be90-75cc3a40e1b9&quot;,
+  &quot;username&quot;: &quot;TestUser407&quot;,
+  &quot;id&quot;: &quot;1963c39e-edfd-41ea-be90-75cc3a40e1b9&quot;,
+  &quot;firstName&quot;: &quot;any&quot;,
+  &quot;lastName&quot;: &quot;any&quot;,
+  &quot;dependants&quot;: 1,
+  &quot;salary&quot;: 0,
+  &quot;gross&quot;: 0,
+  &quot;benefitsCost&quot;: 57.69231,
+  &quot;net&quot;: -57.69231
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.13.0.call">
+    <div class="step-container" id="5.13.0.call.0.44">
+      <div class="step-ref passed">44</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match responseStatus == karate.get(&#39;expectedStatus&#39;, 200)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response == expectedResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.6:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tests=put-employees</a><a class="badge badge-primary" href="karate-tags.html">tests=employees</a><a class="badge badge-primary" href="karate-tags.html">test=put-employees-errors</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.6:16]</span>
+                <span class="scenario-name">PUT /employees errors - PUT request with dependants greater than 32</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>308</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.6:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.6:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>callonce read(endpoints.postEmployees) {expectedStatus: 200, requestBody: { firstName:&quot;Killy&quot;,lastName:&quot;Williams&quot;,dependants: 2}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.6:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def employeeId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.6:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure afterFeature = function() { karate.call(endpoints.deleteEmployeesId, {employeeId: employeeId, expectedStatus: 200})}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(endpoints.putEmployeesId) {expectedStatus: 400, requestBody: {&quot;firstName&quot;:&quot;any&quot;,&quot;lastName&quot;:&quot;any&quot;,&quot;dependants&quot;:10000,&quot;id&quot;:&quot;#(employeeId)&quot;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">304</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="6.13.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">karate.endpoints.employees</div>
+      </div>
+      <div class="time-cell passed">299</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.13.0.call">
+    <div class="step-container" id="6.13.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.13.0.call">
+    <div class="step-container" id="6.13.0.call.0.40">
+      <div class="step-ref passed">40</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;Prod&#39;,&#39;api&#39;, &#39;employees&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.13.0.call">
+    <div class="step-container" id="6.13.0.call.0.41">
+      <div class="step-ref passed">41</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestHeaders&#39;, defaultAuth)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.13.0.call">
+    <div class="step-container" id="6.13.0.call.0.42">
+      <div class="step-ref passed">42</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request karate.get(&#39;requestBody&#39;, {})</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.13.0.call">
+    <div class="step-container" id="6.13.0.call.0.43">
+      <div class="step-ref passed">43</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">297</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="6.13.0.call.0.43">12:12:05.106 request:
+1 &gt; PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 99
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;firstName&quot;: &quot;any&quot;,
+  &quot;lastName&quot;: &quot;any&quot;,
+  &quot;dependants&quot;: 10000,
+  &quot;id&quot;: &quot;74b989c4-dd85-4a93-90e1-cb3701f3a271&quot;
+}
+
+
+12:12:05.401 response time in milliseconds: 294
+1 &lt; 400
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 96
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:05 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee55-441c3a4a22fbf59a47499dd6;Parent=5bd4e8cd74712618;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: 2112d829-0824-4b10-b276-8efab86cb230
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMotYF9UoAMEIHQ=
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 344591a1b3de7e1e128c796fefc38088.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: xSfS62iRC8DjVZo1o_eKhv8Nfa1eJ1jUIPHf13oitB0KPiGSr6zjIw==
+[
+  {
+    &quot;memberNames&quot;: [
+      &quot;Dependants&quot;
+    ],
+    &quot;errorMessage&quot;: &quot;The field Dependants must be between 0 and 32.&quot;
+  }
+]
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.13.0.call">
+    <div class="step-container" id="6.13.0.call.0.44">
+      <div class="step-ref passed">44</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match responseStatus == karate.get(&#39;expectedStatus&#39;, 200)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response == expectedResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.7:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tests=put-employees</a><a class="badge badge-primary" href="karate-tags.html">tests=employees</a><a class="badge badge-primary" href="karate-tags.html">test=put-employees-errors</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.7:16]</span>
+                <span class="scenario-name">PUT /employees errors - PUT request with dependants less than 0</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>239</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.7:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.7:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>callonce read(endpoints.postEmployees) {expectedStatus: 200, requestBody: { firstName:&quot;Killy&quot;,lastName:&quot;Williams&quot;,dependants: 2}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.7:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def employeeId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.7:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure afterFeature = function() { karate.call(endpoints.deleteEmployeesId, {employeeId: employeeId, expectedStatus: 200})}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(endpoints.putEmployeesId) {expectedStatus: 400, requestBody: {&quot;firstName&quot;:&quot;any&quot;,&quot;lastName&quot;:&quot;any&quot;,&quot;dependants&quot;:-1,&quot;id&quot;:&quot;#(employeeId)&quot;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">235</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="7.13.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">karate.endpoints.employees</div>
+      </div>
+      <div class="time-cell passed">231</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.13.0.call">
+    <div class="step-container" id="7.13.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.13.0.call">
+    <div class="step-container" id="7.13.0.call.0.40">
+      <div class="step-ref passed">40</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;Prod&#39;,&#39;api&#39;, &#39;employees&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.13.0.call">
+    <div class="step-container" id="7.13.0.call.0.41">
+      <div class="step-ref passed">41</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestHeaders&#39;, defaultAuth)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.13.0.call">
+    <div class="step-container" id="7.13.0.call.0.42">
+      <div class="step-ref passed">42</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request karate.get(&#39;requestBody&#39;, {})</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.13.0.call">
+    <div class="step-container" id="7.13.0.call.0.43">
+      <div class="step-ref passed">43</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">229</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="7.13.0.call.0.43">12:12:05.419 request:
+1 &gt; PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 96
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;firstName&quot;: &quot;any&quot;,
+  &quot;lastName&quot;: &quot;any&quot;,
+  &quot;dependants&quot;: -1,
+  &quot;id&quot;: &quot;74b989c4-dd85-4a93-90e1-cb3701f3a271&quot;
+}
+
+
+12:12:05.648 response time in milliseconds: 228
+1 &lt; 400
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 96
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:05 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee55-2a56096a25b714e648a3aabc;Parent=2e0d2f454c753d8b;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: c8c9f9fb-a16f-46bc-935f-cb7e3e1a2ca6
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMotbGrcoAMEoBA=
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 c577ba8916969d30d0c51e46acfe11d4.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: FncB7XMZu0i0EPMhUEkq_cDQxXEiAGvxKdGF83z0kpI6B67-a7Gixg==
+[
+  {
+    &quot;memberNames&quot;: [
+      &quot;Dependants&quot;
+    ],
+    &quot;errorMessage&quot;: &quot;The field Dependants must be between 0 and 32.&quot;
+  }
+]
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.13.0.call">
+    <div class="step-container" id="7.13.0.call.0.44">
+      <div class="step-ref passed">44</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match responseStatus == karate.get(&#39;expectedStatus&#39;, 200)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response == expectedResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

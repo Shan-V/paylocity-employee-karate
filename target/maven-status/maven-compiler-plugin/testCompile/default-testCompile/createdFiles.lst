@@ -1,0 +1,4 @@
+com/paylocity/employee/karate/utilities/LoggerSingleton.class
+com/paylocity/employee/karate/utilities/KarateSuiteHooks.class
+com/paylocity/employee/karate/KarateTests.class
+com/paylocity/employee/karate/utilities/KarateTestExecutor.class

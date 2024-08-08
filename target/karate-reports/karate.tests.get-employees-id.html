@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"0ff6cce4-fd3f-4804-92fc-725b9f7550ac",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>karate.tests.get-employees-id</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">5</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>dev1</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-08-08 12:11:59 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:10]"><span>[1.1:10]</span> <span>GET /employees/{id} - GET request with employee ID as a numeric string instead of a UUID</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:10]"><span>[1.2:10]</span> <span>GET /employees/{id} - GET request with employee ID as a non-numeric string instead of a UUID</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.3:10]"><span>[1.3:10]</span> <span>GET /employees/{id} - GET request with employee ID as a number instead of a UUID</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.4:10]"><span>[1.4:10]</span> <span>GET /employees/{id} - GET request with employee ID as an invalid UUID</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.5:10]"><span>[1.5:10]</span> <span>GET /employees/{id} - GET request with employee ID that looks like a UUID but is not</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">karate/tests/get-employees-id.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">GET /employees/{id}</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tests=employees</a><a class="badge badge-primary" href="karate-tags.html">tests=get-employees-id</a><a class="badge badge-primary" href="karate-tags.html">test=get-employees-id</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:10]</span>
+                <span class="scenario-name">GET /employees/{id} - GET request with employee ID as a numeric string instead of a UUID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>657</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(endpoints.getEmployeesId)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">657</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.7.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">karate.endpoints.employees</div>
+      </div>
+      <div class="time-cell passed">654</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;Prod&#39;,&#39;api&#39;, &#39;employees&#39;, employeeId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestHeaders&#39;, defaultAuth)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestParams&#39;, {})</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">651</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7.0.call.0.19">12:11:57.888 request:
+1 &gt; GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/12345
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:11:58.538 response time in milliseconds: 648
+1 &lt; 500
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Content-Length: 3612
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:11:58 GMT
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-RequestId: 43140787-35f0-4ef1-8ddb-a34439a1545d
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMosPE2oIAMEZxQ=
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: -1
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee4e-6bdee7a575c2cec353e2decc;Parent=4233e87a02cee0a1;Sampled=0;lineage=da2a2ef2:0
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 e5390f800690cfa4bd359d02b9b69064.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: 54D4hvt9ACwYD2c53G-zT3UF-fA-HnaCySKK-jqq2yYBYDfSba4Lhg==
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;title&gt;Error - Paylocity Benefits Dashboard&lt;/title&gt;
+
+  
+  
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&quot; /&gt;
+&lt;meta name=&quot;x-stylesheet-fallback-test&quot; content=&quot;&quot; class=&quot;sr-only&quot; /&gt;&lt;script&gt;!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName(&quot;SCRIPT&quot;),h=g[g.length-1].previousElementSibling,i=f.defaultView&amp;&amp;f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&amp;&amp;i[a]!==b)for(e=0;e&lt;c.length;e++)f.write(&#39;&lt;link href=&quot;&#39;+c[e]+&#39;&quot; &#39;+d+&quot;/&gt;&quot;)}(&quot;position&quot;,&quot;absolute&quot;,[&quot;/Prod/lib/bootstrap/dist/css/bootstrap.min.css&quot;], &quot;rel=\u0022stylesheet\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-ggOyR0iXCbMQv3Xipma34MD\u002BdH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\u0022 &quot;);&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css&quot; /&gt;
+  
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;/Prod/css/site.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;nav class=&quot;navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom mb-3&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;/Prod/Benefits&quot;&gt;Paylocity Benefits Dashboard&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;main role=&quot;main&quot; class=&quot;pb-3&quot;&gt;
+      
+
+&lt;h1 class=&quot;text-danger&quot;&gt;Error.&lt;/h1&gt;
+&lt;h2 class=&quot;text-danger&quot;&gt;An error occurred while processing your request.&lt;/h2&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Request ID:&lt;/strong&gt; &lt;code&gt;0HN5NOJA3G0KE&lt;/code&gt;
+  &lt;/p&gt;
+
+&lt;h3&gt;Development Mode&lt;/h3&gt;
+
+&lt;p&gt;
+  Swapping to &lt;strong&gt;Development&lt;/strong&gt; environment will display more detailed information about the error that occurred.
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;The Development environment shouldn&#39;t be enabled for deployed applications.&lt;/strong&gt;
+  It can result in displaying sensitive information from exceptions to end users.
+  For local debugging, enable the &lt;strong&gt;Development&lt;/strong&gt; environment by setting the &lt;strong&gt;ASPNETCORE_ENVIRONMENT&lt;/strong&gt; environment variable to &lt;strong&gt;Development&lt;/strong&gt;
+  and restarting the app.
+&lt;/p&gt;
+
+    &lt;/main&gt;
+  &lt;/div&gt;
+
+  &lt;footer class=&quot;border-top footer text-muted&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &amp;copy; 2024 - Paylocity
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+  
+  
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/jquery/dist/jquery.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery &amp;&amp; window.jQuery.fn &amp;&amp; window.jQuery.fn.modal||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/bootstrap/dist/js/bootstrap.bundle.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-xrRywqdh3PHs8keKZN\u002B8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+  
+  &lt;script src=&quot;/Prod/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0&quot;&gt;&lt;/script&gt;
+
+  
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match responseStatus == karate.get(&#39;expectedStatus&#39;, 200)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tests=employees</a><a class="badge badge-primary" href="karate-tags.html">tests=get-employees-id</a><a class="badge badge-primary" href="karate-tags.html">test=get-employees-id</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:10]</span>
+                <span class="scenario-name">GET /employees/{id} - GET request with employee ID as a non-numeric string instead of a UUID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>247</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(endpoints.getEmployeesId)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">247</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="2.7.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">karate.endpoints.employees</div>
+      </div>
+      <div class="time-cell passed">242</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;Prod&#39;,&#39;api&#39;, &#39;employees&#39;, employeeId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestHeaders&#39;, defaultAuth)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestParams&#39;, {})</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">237</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.7.0.call.0.19">12:11:58.554 request:
+1 &gt; GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/foo
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:11:58.790 response time in milliseconds: 235
+1 &lt; 500
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Content-Length: 3612
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:11:58 GMT
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-RequestId: 958bd780-e0a6-4bb5-a909-dbe0f2548291
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMosWEcjoAMEOcQ=
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: -1
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee4e-09574ee50e588f9d298209b5;Parent=734a93990fde154c;Sampled=0;lineage=da2a2ef2:0
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 f154cde4181f98fadc712cec9f8ab060.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: vTu92g44bWZq-AclQ4YuvVGz3Wmu1g89qEeKaf0rE058RHdXxqxw0Q==
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;title&gt;Error - Paylocity Benefits Dashboard&lt;/title&gt;
+
+  
+  
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&quot; /&gt;
+&lt;meta name=&quot;x-stylesheet-fallback-test&quot; content=&quot;&quot; class=&quot;sr-only&quot; /&gt;&lt;script&gt;!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName(&quot;SCRIPT&quot;),h=g[g.length-1].previousElementSibling,i=f.defaultView&amp;&amp;f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&amp;&amp;i[a]!==b)for(e=0;e&lt;c.length;e++)f.write(&#39;&lt;link href=&quot;&#39;+c[e]+&#39;&quot; &#39;+d+&quot;/&gt;&quot;)}(&quot;position&quot;,&quot;absolute&quot;,[&quot;/Prod/lib/bootstrap/dist/css/bootstrap.min.css&quot;], &quot;rel=\u0022stylesheet\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-ggOyR0iXCbMQv3Xipma34MD\u002BdH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\u0022 &quot;);&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css&quot; /&gt;
+  
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;/Prod/css/site.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;nav class=&quot;navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom mb-3&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;/Prod/Benefits&quot;&gt;Paylocity Benefits Dashboard&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;main role=&quot;main&quot; class=&quot;pb-3&quot;&gt;
+      
+
+&lt;h1 class=&quot;text-danger&quot;&gt;Error.&lt;/h1&gt;
+&lt;h2 class=&quot;text-danger&quot;&gt;An error occurred while processing your request.&lt;/h2&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Request ID:&lt;/strong&gt; &lt;code&gt;0HN5NOJA3G0KF&lt;/code&gt;
+  &lt;/p&gt;
+
+&lt;h3&gt;Development Mode&lt;/h3&gt;
+
+&lt;p&gt;
+  Swapping to &lt;strong&gt;Development&lt;/strong&gt; environment will display more detailed information about the error that occurred.
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;The Development environment shouldn&#39;t be enabled for deployed applications.&lt;/strong&gt;
+  It can result in displaying sensitive information from exceptions to end users.
+  For local debugging, enable the &lt;strong&gt;Development&lt;/strong&gt; environment by setting the &lt;strong&gt;ASPNETCORE_ENVIRONMENT&lt;/strong&gt; environment variable to &lt;strong&gt;Development&lt;/strong&gt;
+  and restarting the app.
+&lt;/p&gt;
+
+    &lt;/main&gt;
+  &lt;/div&gt;
+
+  &lt;footer class=&quot;border-top footer text-muted&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &amp;copy; 2024 - Paylocity
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+  
+  
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/jquery/dist/jquery.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery &amp;&amp; window.jQuery.fn &amp;&amp; window.jQuery.fn.modal||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/bootstrap/dist/js/bootstrap.bundle.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-xrRywqdh3PHs8keKZN\u002B8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+  
+  &lt;script src=&quot;/Prod/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0&quot;&gt;&lt;/script&gt;
+
+  
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match responseStatus == karate.get(&#39;expectedStatus&#39;, 200)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.3:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tests=employees</a><a class="badge badge-primary" href="karate-tags.html">tests=get-employees-id</a><a class="badge badge-primary" href="karate-tags.html">test=get-employees-id</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.3:10]</span>
+                <span class="scenario-name">GET /employees/{id} - GET request with employee ID as a number instead of a UUID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>250</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(endpoints.getEmployeesId)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">250</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="3.7.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">karate.endpoints.employees</div>
+      </div>
+      <div class="time-cell passed">246</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;Prod&#39;,&#39;api&#39;, &#39;employees&#39;, employeeId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestHeaders&#39;, defaultAuth)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestParams&#39;, {})</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">244</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.7.0.call.0.19">12:11:58.801 request:
+1 &gt; GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/1234
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:11:59.044 response time in milliseconds: 241
+1 &lt; 500
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Content-Length: 3612
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:11:59 GMT
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-RequestId: c149d796-256d-425a-8e26-c4e045315e8b
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMosYGR1IAMEndg=
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: -1
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee4e-762439e8455f752976f8bc12;Parent=75f699686d3f5bd9;Sampled=0;lineage=da2a2ef2:0
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 f6f36f0a4bfc6440d567d2cc5ed4f414.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: c7JUBzbvs-9r1n6AMRdfH8swwKdj_XUhf-2tl-Qw8PNsakj9yL-2hw==
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;title&gt;Error - Paylocity Benefits Dashboard&lt;/title&gt;
+
+  
+  
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&quot; /&gt;
+&lt;meta name=&quot;x-stylesheet-fallback-test&quot; content=&quot;&quot; class=&quot;sr-only&quot; /&gt;&lt;script&gt;!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName(&quot;SCRIPT&quot;),h=g[g.length-1].previousElementSibling,i=f.defaultView&amp;&amp;f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&amp;&amp;i[a]!==b)for(e=0;e&lt;c.length;e++)f.write(&#39;&lt;link href=&quot;&#39;+c[e]+&#39;&quot; &#39;+d+&quot;/&gt;&quot;)}(&quot;position&quot;,&quot;absolute&quot;,[&quot;/Prod/lib/bootstrap/dist/css/bootstrap.min.css&quot;], &quot;rel=\u0022stylesheet\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-ggOyR0iXCbMQv3Xipma34MD\u002BdH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\u0022 &quot;);&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css&quot; /&gt;
+  
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;/Prod/css/site.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;nav class=&quot;navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom mb-3&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;/Prod/Benefits&quot;&gt;Paylocity Benefits Dashboard&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;main role=&quot;main&quot; class=&quot;pb-3&quot;&gt;
+      
+
+&lt;h1 class=&quot;text-danger&quot;&gt;Error.&lt;/h1&gt;
+&lt;h2 class=&quot;text-danger&quot;&gt;An error occurred while processing your request.&lt;/h2&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Request ID:&lt;/strong&gt; &lt;code&gt;0HN5NOJA3G0KG&lt;/code&gt;
+  &lt;/p&gt;
+
+&lt;h3&gt;Development Mode&lt;/h3&gt;
+
+&lt;p&gt;
+  Swapping to &lt;strong&gt;Development&lt;/strong&gt; environment will display more detailed information about the error that occurred.
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;The Development environment shouldn&#39;t be enabled for deployed applications.&lt;/strong&gt;
+  It can result in displaying sensitive information from exceptions to end users.
+  For local debugging, enable the &lt;strong&gt;Development&lt;/strong&gt; environment by setting the &lt;strong&gt;ASPNETCORE_ENVIRONMENT&lt;/strong&gt; environment variable to &lt;strong&gt;Development&lt;/strong&gt;
+  and restarting the app.
+&lt;/p&gt;
+
+    &lt;/main&gt;
+  &lt;/div&gt;
+
+  &lt;footer class=&quot;border-top footer text-muted&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &amp;copy; 2024 - Paylocity
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+  
+  
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/jquery/dist/jquery.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery &amp;&amp; window.jQuery.fn &amp;&amp; window.jQuery.fn.modal||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/bootstrap/dist/js/bootstrap.bundle.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-xrRywqdh3PHs8keKZN\u002B8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+  
+  &lt;script src=&quot;/Prod/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0&quot;&gt;&lt;/script&gt;
+
+  
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match responseStatus == karate.get(&#39;expectedStatus&#39;, 200)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.4:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tests=employees</a><a class="badge badge-primary" href="karate-tags.html">tests=get-employees-id</a><a class="badge badge-primary" href="karate-tags.html">test=get-employees-id</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.4:10]</span>
+                <span class="scenario-name">GET /employees/{id} - GET request with employee ID as an invalid UUID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>341</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(endpoints.getEmployeesId)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">341</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="4.7.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">karate.endpoints.employees</div>
+      </div>
+      <div class="time-cell passed">337</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.7.0.call">
+    <div class="step-container" id="4.7.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.7.0.call">
+    <div class="step-container" id="4.7.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;Prod&#39;,&#39;api&#39;, &#39;employees&#39;, employeeId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.7.0.call">
+    <div class="step-container" id="4.7.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestHeaders&#39;, defaultAuth)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.7.0.call">
+    <div class="step-container" id="4.7.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestParams&#39;, {})</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.7.0.call">
+    <div class="step-container" id="4.7.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">335</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.7.0.call.0.19">12:11:59.054 request:
+1 &gt; GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/375ceaca-b04c-4624-bbaa-7183dd5895bb
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:11:59.387 response time in milliseconds: 329
+1 &lt; 200
+1 &lt; Content-Length: 0
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:11:59 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee4f-2a3642450b0e3b9c50d2b2b2;Parent=79f023125f7a7505;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: e790c7df-71ad-4dcd-ba10-b6253e56de19
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMosbHXrIAMEISA=
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 b97ae744144c7c472752110c480bad34.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: tnVX8YQS7PW_ABzShAqDkqaGoSqoYoAgqhsNfeFPmdzfhkFjwiMbKA==
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.7.0.call">
+    <div class="step-container" id="4.7.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match responseStatus == karate.get(&#39;expectedStatus&#39;, 200)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.5:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tests=employees</a><a class="badge badge-primary" href="karate-tags.html">tests=get-employees-id</a><a class="badge badge-primary" href="karate-tags.html">test=get-employees-id</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.5:10]</span>
+                <span class="scenario-name">GET /employees/{id} - GET request with employee ID that looks like a UUID but is not</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>219</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(endpoints.getEmployeesId)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">219</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="5.7.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">karate.endpoints.employees</div>
+      </div>
+      <div class="time-cell passed">214</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.7.0.call">
+    <div class="step-container" id="5.7.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.7.0.call">
+    <div class="step-container" id="5.7.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;Prod&#39;,&#39;api&#39;, &#39;employees&#39;, employeeId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.7.0.call">
+    <div class="step-container" id="5.7.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestHeaders&#39;, defaultAuth)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.7.0.call">
+    <div class="step-container" id="5.7.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers karate.get(&#39;requestParams&#39;, {})</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.7.0.call">
+    <div class="step-container" id="5.7.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">212</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.7.0.call.0.19">12:11:59.402 request:
+1 &gt; GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/375ceaca-b04c-4624-bbxx-7183dd5895xx
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:11:59.612 response time in milliseconds: 209
+1 &lt; 500
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Content-Length: 3612
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:11:59 GMT
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-RequestId: 762cbcd8-bb8e-4231-9e56-b0a8df026907
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMoseHCCIAMEByg=
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: -1
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee4f-10b7bc557f859a083e552aac;Parent=0c2e780b5a87caea;Sampled=0;lineage=da2a2ef2:0
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 f154cde4181f98fadc712cec9f8ab060.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: bSPNwTiJhdXAY2z-EEvKEr9f9JFCJlbtRaxazXkgOh7BHyJZDS2I2Q==
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;title&gt;Error - Paylocity Benefits Dashboard&lt;/title&gt;
+
+  
+  
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&quot; /&gt;
+&lt;meta name=&quot;x-stylesheet-fallback-test&quot; content=&quot;&quot; class=&quot;sr-only&quot; /&gt;&lt;script&gt;!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName(&quot;SCRIPT&quot;),h=g[g.length-1].previousElementSibling,i=f.defaultView&amp;&amp;f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&amp;&amp;i[a]!==b)for(e=0;e&lt;c.length;e++)f.write(&#39;&lt;link href=&quot;&#39;+c[e]+&#39;&quot; &#39;+d+&quot;/&gt;&quot;)}(&quot;position&quot;,&quot;absolute&quot;,[&quot;/Prod/lib/bootstrap/dist/css/bootstrap.min.css&quot;], &quot;rel=\u0022stylesheet\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-ggOyR0iXCbMQv3Xipma34MD\u002BdH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\u0022 &quot;);&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css&quot; /&gt;
+  
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;/Prod/css/site.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;nav class=&quot;navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom mb-3&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;/Prod/Benefits&quot;&gt;Paylocity Benefits Dashboard&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;main role=&quot;main&quot; class=&quot;pb-3&quot;&gt;
+      
+
+&lt;h1 class=&quot;text-danger&quot;&gt;Error.&lt;/h1&gt;
+&lt;h2 class=&quot;text-danger&quot;&gt;An error occurred while processing your request.&lt;/h2&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Request ID:&lt;/strong&gt; &lt;code&gt;0HN5NOJA3G0KH&lt;/code&gt;
+  &lt;/p&gt;
+
+&lt;h3&gt;Development Mode&lt;/h3&gt;
+
+&lt;p&gt;
+  Swapping to &lt;strong&gt;Development&lt;/strong&gt; environment will display more detailed information about the error that occurred.
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;The Development environment shouldn&#39;t be enabled for deployed applications.&lt;/strong&gt;
+  It can result in displaying sensitive information from exceptions to end users.
+  For local debugging, enable the &lt;strong&gt;Development&lt;/strong&gt; environment by setting the &lt;strong&gt;ASPNETCORE_ENVIRONMENT&lt;/strong&gt; environment variable to &lt;strong&gt;Development&lt;/strong&gt;
+  and restarting the app.
+&lt;/p&gt;
+
+    &lt;/main&gt;
+  &lt;/div&gt;
+
+  &lt;footer class=&quot;border-top footer text-muted&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &amp;copy; 2024 - Paylocity
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+  
+  
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/jquery/dist/jquery.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery &amp;&amp; window.jQuery.fn &amp;&amp; window.jQuery.fn.modal||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/bootstrap/dist/js/bootstrap.bundle.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-xrRywqdh3PHs8keKZN\u002B8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+  
+  &lt;script src=&quot;/Prod/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0&quot;&gt;&lt;/script&gt;
+
+  
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.7.0.call">
+    <div class="step-container" id="5.7.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match responseStatus == karate.get(&#39;expectedStatus&#39;, 200)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

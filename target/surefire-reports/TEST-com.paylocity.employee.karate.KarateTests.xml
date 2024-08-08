@@ -1,0 +1,2668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.paylocity.employee.karate.KarateTests" time="11.926" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/thanushanvaratharajah/Downloads/paylocity-employee-karate/target/test-classes:/Users/thanushanvaratharajah/Downloads/paylocity-employee-karate/target/classes:/Users/thanushanvaratharajah/.m2/repository/com/intuit/karate/karate-junit5/1.4.0/karate-junit5-1.4.0.jar:/Users/thanushanvaratharajah/.m2/repository/com/intuit/karate/karate-core/1.4.0/karate-core-1.4.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/graalvm/js/js-scriptengine/22.3.0/js-scriptengine-22.3.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/graalvm/sdk/graal-sdk/22.3.0/graal-sdk-22.3.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/graalvm/js/js/22.3.0/js-22.3.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/graalvm/regex/regex/22.3.0/regex-22.3.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/graalvm/truffle/truffle-api/22.3.0/truffle-api-22.3.0.jar:/Users/thanushanvaratharajah/.m2/repository/com/ibm/icu/icu4j/71.1/icu4j-71.1.jar:/Users/thanushanvaratharajah/.m2/repository/org/thymeleaf/thymeleaf/3.0.14.RELEASE/thymeleaf-3.0.14.RELEASE.jar:/Users/thanushanvaratharajah/.m2/repository/ognl/ognl/3.1.26/ognl-3.1.26.jar:/Users/thanushanvaratharajah/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/Users/thanushanvaratharajah/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/Users/thanushanvaratharajah/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/thanushanvaratharajah/.m2/repository/com/linecorp/armeria/armeria/1.22.0/armeria-1.22.0.jar:/Users/thanushanvaratharajah/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.2/jackson-datatype-jdk8-2.14.2.jar:/Users/thanushanvaratharajah/.m2/repository/io/micrometer/micrometer-core/1.10.3/micrometer-core-1.10.3.jar:/Users/thanushanvaratharajah/.m2/repository/io/micrometer/micrometer-commons/1.10.3/micrometer-commons-1.10.3.jar:/Users/thanushanvaratharajah/.m2/repository/io/micrometer/micrometer-observation/1.10.3/micrometer-observation-1.10.3.jar:/Users/thanushanvaratharajah/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/Users/thanushanvaratharajah/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-transport/4.1.87.Final/netty-transport-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-common/4.1.87.Final/netty-common-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-buffer/4.1.87.Final/netty-buffer-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-resolver/4.1.87.Final/netty-resolver-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-codec-haproxy/4.1.87.Final/netty-codec-haproxy-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-codec/4.1.87.Final/netty-codec-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-codec-http2/4.1.87.Final/netty-codec-http2-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-handler/4.1.87.Final/netty-handler-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-codec-http/4.1.87.Final/netty-codec-http-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-resolver-dns/4.1.87.Final/netty-resolver-dns-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-codec-dns/4.1.87.Final/netty-codec-dns-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.87.Final/netty-transport-native-unix-common-4.1.87.Final-linux-x86_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-transport-native-epoll/4.1.87.Final/netty-transport-native-epoll-4.1.87.Final-linux-x86_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.87.Final/netty-transport-native-unix-common-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.87.Final/netty-transport-classes-epoll-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.87.Final/netty-resolver-dns-native-macos-4.1.87.Final-osx-x86_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.87.Final/netty-resolver-dns-classes-macos-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.87.Final/netty-resolver-dns-native-macos-4.1.87.Final-osx-aarch_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-x86_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-tcnative-classes/2.0.56.Final/netty-tcnative-classes-2.0.56.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-aarch_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-x86_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-aarch_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-windows-x86_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-handler-proxy/4.1.87.Final/netty-handler-proxy-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-codec-socks/4.1.87.Final/netty-codec-socks-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.9.0/brotli4j-1.9.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/thanushanvaratharajah/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/thanushanvaratharajah/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/thanushanvaratharajah/.m2/repository/org/antlr/antlr4-runtime/4.11.1/antlr4-runtime-4.11.1.jar:/Users/thanushanvaratharajah/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/thanushanvaratharajah/.m2/repository/net/minidev/json-smart/2.4.10/json-smart-2.4.10.jar:/Users/thanushanvaratharajah/.m2/repository/net/minidev/accessors-smart/2.4.9/accessors-smart-2.4.9.jar:/Users/thanushanvaratharajah/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/thanushanvaratharajah/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar:/Users/thanushanvaratharajah/.m2/repository/de/siegmar/fastcsv/2.2.1/fastcsv-2.2.1.jar:/Users/thanushanvaratharajah/.m2/repository/info/picocli/picocli/4.7.1/picocli-4.7.1.jar:/Users/thanushanvaratharajah/.m2/repository/io/github/classgraph/classgraph/4.8.152/classgraph-4.8.152.jar:/Users/thanushanvaratharajah/.m2/repository/io/github/t12y/resemble/1.0.2/resemble-1.0.2.jar:/Users/thanushanvaratharajah/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/Users/thanushanvaratharajah/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/Users/thanushanvaratharajah/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/thanushanvaratharajah/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/Users/thanushanvaratharajah/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:/Users/thanushanvaratharajah/.m2/repository/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar:/Users/thanushanvaratharajah/.m2/repository/net/masterthought/cucumber-reporting/5.8.0/cucumber-reporting-5.8.0.jar:/Users/thanushanvaratharajah/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.16.1/jackson-databind-2.16.1.jar:/Users/thanushanvaratharajah/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.16.1/jackson-annotations-2.16.1.jar:/Users/thanushanvaratharajah/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.16.1/jackson-core-2.16.1.jar:/Users/thanushanvaratharajah/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.16.1/jackson-datatype-jsr310-2.16.1.jar:/Users/thanushanvaratharajah/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/Users/thanushanvaratharajah/.m2/repository/joda-time/joda-time/2.12.6/joda-time-2.12.6.jar:/Users/thanushanvaratharajah/.m2/repository/org/apache/commons/commons-configuration2/2.9.0/commons-configuration2-2.9.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/thanushanvaratharajah/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/Users/thanushanvaratharajah/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/jsoup/jsoup/1.17.2/jsoup-1.17.2.jar:/Users/thanushanvaratharajah/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20220608.1/owasp-java-html-sanitizer-20220608.1.jar:/Users/thanushanvaratharajah/.m2/repository/com/google/guava/guava/33.0.0-jre/guava-33.0.0-jre.jar:/Users/thanushanvaratharajah/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/thanushanvaratharajah/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/thanushanvaratharajah/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/thanushanvaratharajah/.m2/repository/org/checkerframework/checker-qual/3.41.0/checker-qual-3.41.0.jar:/Users/thanushanvaratharajah/.m2/repository/com/google/errorprone/error_prone_annotations/2.23.0/error_prone_annotations-2.23.0.jar:/Users/thanushanvaratharajah/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/thanushanvaratharajah/.m2/repository/org/slf4j/jcl-over-slf4j/2.0.11/jcl-over-slf4j-2.0.11.jar:/Users/thanushanvaratharajah/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/thanushanvaratharajah/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/Users/thanushanvaratharajah/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="karate.env" value="dev1"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Users/thanushanvaratharajah/Library/Java/JavaVirtualMachines/openjdk-21.0.2/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/thanushanvaratharajah/Downloads/paylocity-employee-karate/target/surefire/surefirebooter-20240808121154399_3.jar /Users/thanushanvaratharajah/Downloads/paylocity-employee-karate/target/surefire 2024-08-08T12-11-54_362-jvmRun1 surefire-20240808121154399_1tmp surefire_0-20240808121154399_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/thanushanvaratharajah/Downloads/paylocity-employee-karate/target/test-classes:/Users/thanushanvaratharajah/Downloads/paylocity-employee-karate/target/classes:/Users/thanushanvaratharajah/.m2/repository/com/intuit/karate/karate-junit5/1.4.0/karate-junit5-1.4.0.jar:/Users/thanushanvaratharajah/.m2/repository/com/intuit/karate/karate-core/1.4.0/karate-core-1.4.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/graalvm/js/js-scriptengine/22.3.0/js-scriptengine-22.3.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/graalvm/sdk/graal-sdk/22.3.0/graal-sdk-22.3.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/graalvm/js/js/22.3.0/js-22.3.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/graalvm/regex/regex/22.3.0/regex-22.3.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/graalvm/truffle/truffle-api/22.3.0/truffle-api-22.3.0.jar:/Users/thanushanvaratharajah/.m2/repository/com/ibm/icu/icu4j/71.1/icu4j-71.1.jar:/Users/thanushanvaratharajah/.m2/repository/org/thymeleaf/thymeleaf/3.0.14.RELEASE/thymeleaf-3.0.14.RELEASE.jar:/Users/thanushanvaratharajah/.m2/repository/ognl/ognl/3.1.26/ognl-3.1.26.jar:/Users/thanushanvaratharajah/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/Users/thanushanvaratharajah/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/Users/thanushanvaratharajah/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/thanushanvaratharajah/.m2/repository/com/linecorp/armeria/armeria/1.22.0/armeria-1.22.0.jar:/Users/thanushanvaratharajah/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.2/jackson-datatype-jdk8-2.14.2.jar:/Users/thanushanvaratharajah/.m2/repository/io/micrometer/micrometer-core/1.10.3/micrometer-core-1.10.3.jar:/Users/thanushanvaratharajah/.m2/repository/io/micrometer/micrometer-commons/1.10.3/micrometer-commons-1.10.3.jar:/Users/thanushanvaratharajah/.m2/repository/io/micrometer/micrometer-observation/1.10.3/micrometer-observation-1.10.3.jar:/Users/thanushanvaratharajah/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/Users/thanushanvaratharajah/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-transport/4.1.87.Final/netty-transport-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-common/4.1.87.Final/netty-common-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-buffer/4.1.87.Final/netty-buffer-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-resolver/4.1.87.Final/netty-resolver-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-codec-haproxy/4.1.87.Final/netty-codec-haproxy-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-codec/4.1.87.Final/netty-codec-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-codec-http2/4.1.87.Final/netty-codec-http2-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-handler/4.1.87.Final/netty-handler-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-codec-http/4.1.87.Final/netty-codec-http-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-resolver-dns/4.1.87.Final/netty-resolver-dns-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-codec-dns/4.1.87.Final/netty-codec-dns-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.87.Final/netty-transport-native-unix-common-4.1.87.Final-linux-x86_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-transport-native-epoll/4.1.87.Final/netty-transport-native-epoll-4.1.87.Final-linux-x86_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.87.Final/netty-transport-native-unix-common-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.87.Final/netty-transport-classes-epoll-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.87.Final/netty-resolver-dns-native-macos-4.1.87.Final-osx-x86_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.87.Final/netty-resolver-dns-classes-macos-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.87.Final/netty-resolver-dns-native-macos-4.1.87.Final-osx-aarch_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-x86_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-tcnative-classes/2.0.56.Final/netty-tcnative-classes-2.0.56.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-aarch_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-x86_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-aarch_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-windows-x86_64.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-handler-proxy/4.1.87.Final/netty-handler-proxy-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/io/netty/netty-codec-socks/4.1.87.Final/netty-codec-socks-4.1.87.Final.jar:/Users/thanushanvaratharajah/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.9.0/brotli4j-1.9.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/thanushanvaratharajah/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/thanushanvaratharajah/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/thanushanvaratharajah/.m2/repository/org/antlr/antlr4-runtime/4.11.1/antlr4-runtime-4.11.1.jar:/Users/thanushanvaratharajah/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/thanushanvaratharajah/.m2/repository/net/minidev/json-smart/2.4.10/json-smart-2.4.10.jar:/Users/thanushanvaratharajah/.m2/repository/net/minidev/accessors-smart/2.4.9/accessors-smart-2.4.9.jar:/Users/thanushanvaratharajah/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/thanushanvaratharajah/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar:/Users/thanushanvaratharajah/.m2/repository/de/siegmar/fastcsv/2.2.1/fastcsv-2.2.1.jar:/Users/thanushanvaratharajah/.m2/repository/info/picocli/picocli/4.7.1/picocli-4.7.1.jar:/Users/thanushanvaratharajah/.m2/repository/io/github/classgraph/classgraph/4.8.152/classgraph-4.8.152.jar:/Users/thanushanvaratharajah/.m2/repository/io/github/t12y/resemble/1.0.2/resemble-1.0.2.jar:/Users/thanushanvaratharajah/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/Users/thanushanvaratharajah/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/Users/thanushanvaratharajah/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/thanushanvaratharajah/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/Users/thanushanvaratharajah/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:/Users/thanushanvaratharajah/.m2/repository/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar:/Users/thanushanvaratharajah/.m2/repository/net/masterthought/cucumber-reporting/5.8.0/cucumber-reporting-5.8.0.jar:/Users/thanushanvaratharajah/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.16.1/jackson-databind-2.16.1.jar:/Users/thanushanvaratharajah/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.16.1/jackson-annotations-2.16.1.jar:/Users/thanushanvaratharajah/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.16.1/jackson-core-2.16.1.jar:/Users/thanushanvaratharajah/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.16.1/jackson-datatype-jsr310-2.16.1.jar:/Users/thanushanvaratharajah/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/Users/thanushanvaratharajah/.m2/repository/joda-time/joda-time/2.12.6/joda-time-2.12.6.jar:/Users/thanushanvaratharajah/.m2/repository/org/apache/commons/commons-configuration2/2.9.0/commons-configuration2-2.9.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/thanushanvaratharajah/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/Users/thanushanvaratharajah/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/Users/thanushanvaratharajah/.m2/repository/org/jsoup/jsoup/1.17.2/jsoup-1.17.2.jar:/Users/thanushanvaratharajah/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20220608.1/owasp-java-html-sanitizer-20220608.1.jar:/Users/thanushanvaratharajah/.m2/repository/com/google/guava/guava/33.0.0-jre/guava-33.0.0-jre.jar:/Users/thanushanvaratharajah/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/thanushanvaratharajah/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/thanushanvaratharajah/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/thanushanvaratharajah/.m2/repository/org/checkerframework/checker-qual/3.41.0/checker-qual-3.41.0.jar:/Users/thanushanvaratharajah/.m2/repository/com/google/errorprone/error_prone_annotations/2.23.0/error_prone_annotations-2.23.0.jar:/Users/thanushanvaratharajah/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/thanushanvaratharajah/.m2/repository/org/slf4j/jcl-over-slf4j/2.0.11/jcl-over-slf4j-2.0.11.jar:/Users/thanushanvaratharajah/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/thanushanvaratharajah/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/Users/thanushanvaratharajah/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/thanushanvaratharajah"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/Users/thanushanvaratharajah/Library/Java/JavaVirtualMachines/openjdk-21.0.2/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/thanushanvaratharajah/Downloads/paylocity-employee-karate"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/thanushanvaratharajah/Downloads/paylocity-employee-karate/target/surefire/surefirebooter-20240808121154399_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.2+13-58"/>
+    <property name="user.name" value="thanushanvaratharajah"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.6"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/thanushanvaratharajah/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/n6/7ql4nt9927s6njqm2j60yxxc0000gn/T/"/>
+    <property name="java.version" value="21.0.2"/>
+    <property name="user.dir" value="/Users/thanushanvaratharajah/Downloads/paylocity-employee-karate"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/thanushanvaratharajah/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.2+13-58"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="test" classname="com.paylocity.employee.karate.KarateTests" time="11.916">
+    <system-out><![CDATA[12:11:54.832 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': dev1
+12:11:55.150 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:11:55.153 [main] INFO  com.intuit.karate - Tests have started in dev1 environment
+12:11:55.154 [main] INFO  com.intuit.karate - Current memory usage: 52 MB
+12:11:55.693 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:karate/common/aliases.feature@alias=endpoint
+12:11:55.695 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/common/aliases.feature - call by tag at line 12: alias=endpoint
+12:11:55.714 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:karate/common/aliases.feature@alias=endpoint
+12:11:55.715 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:karate/common/aliases.feature@alias=requestSchema
+12:11:55.716 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/common/aliases.feature - call by tag at line 20: alias=requestSchema
+12:11:55.721 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:karate/common/aliases.feature@alias=requestSchema
+12:11:55.722 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:karate/common/aliases.feature@alias=responseSchema
+12:11:55.722 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/common/aliases.feature - call by tag at line 25: alias=responseSchema
+12:11:55.728 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:karate/common/aliases.feature@alias=responseSchema
+12:11:55.739 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 8: endpoint=delete-employees-id
+12:11:55.791 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/12345
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:56.270 [main] DEBUG com.intuit.karate - response time in milliseconds: 477
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:11:56 GMT
+1 < Pragma: no-cache
+1 < x-amzn-RequestId: 1e71dcda-e714-46dd-bbf3-d95ad31d9b93
+1 < Strict-Transport-Security: max-age=2592000
+1 < Allow: GET
+1 < x-amz-apigw-id: cMor8FCIoAMEJVA=
+1 < Cache-Control: no-cache,no-store
+1 < Expires: -1
+1 < X-Amzn-Trace-Id: Root=1-66b4ee4c-632a19f9047a916135973994;Parent=4a5db0b2ab17565b;Sampled=0;lineage=da2a2ef2:0
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 d866303de5f98a8ab5948cc80b37140a.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: nbBN0TwOiPRMNynqd42z2myVzmBg-0jHOgC_yQamnVTGcu43WN90tg==
+
+
+12:11:56.288 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 8: endpoint=delete-employees-id
+12:11:56.293 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/foo
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:56.544 [main] DEBUG com.intuit.karate - response time in milliseconds: 249
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:11:56 GMT
+1 < Pragma: no-cache
+1 < x-amzn-RequestId: 47106a68-dc9e-444c-98d8-65899f2c9786
+1 < Strict-Transport-Security: max-age=2592000
+1 < Allow: GET
+1 < x-amz-apigw-id: cMor_HkjoAMEo_g=
+1 < Cache-Control: no-cache,no-store
+1 < Expires: -1
+1 < X-Amzn-Trace-Id: Root=1-66b4ee4c-57c389a14db566ce403fd716;Parent=470203b10e15c0e2;Sampled=0;lineage=da2a2ef2:0
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 09f58b6f90930f04b2d074e90fe653f6.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: SoWCVsY1Ioep07yFuPzD8qVVBa6XD16JLynqUSg9JHvh8BL06UM1hQ==
+
+
+12:11:56.554 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 8: endpoint=delete-employees-id
+12:11:56.560 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/1234
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:56.784 [main] DEBUG com.intuit.karate - response time in milliseconds: 223
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:11:56 GMT
+1 < Pragma: no-cache
+1 < x-amzn-RequestId: 2acda440-76b3-452c-b30c-98d464198b7c
+1 < Strict-Transport-Security: max-age=2592000
+1 < Allow: GET
+1 < x-amz-apigw-id: cMosCGrGoAMENWQ=
+1 < Cache-Control: no-cache,no-store
+1 < Expires: -1
+1 < X-Amzn-Trace-Id: Root=1-66b4ee4c-293c6c5a5a8a75ac0bc074b3;Parent=1dbf6c59d230e24a;Sampled=0;lineage=da2a2ef2:0
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 e5390f800690cfa4bd359d02b9b69064.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: ShRvhap3qMt2RiPTFClzDZyAgtEfjaThdRKCaOUNJ_THJfgn5TVQmQ==
+
+
+12:11:56.793 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 8: endpoint=delete-employees-id
+12:11:56.798 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:56.982 [main] DEBUG com.intuit.karate - response time in milliseconds: 184
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:11:57 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee4c-06b57456629417b460517278;Parent=4bb1b8432cf48f1e;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: a9ebd84d-d9bc-4382-a91e-c74edce5294b
+1 < Strict-Transport-Security: max-age=2592000
+1 < Allow: GET, POST, PUT
+1 < x-amz-apigw-id: cMosEG8AoAMEs8w=
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 827993cb87b92a84e90801301fc222a4.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: Rgfz2akTPvizfl86qNti6Wi8zHV-6XME8ZFsVe2qwYrN-cXsy0DsTg==
+
+
+12:11:56.989 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 8: endpoint=delete-employees-id
+12:11:56.993 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/375ceaca-b04c-4624-bbaa-7183dd5895bb
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:57.311 [main] DEBUG com.intuit.karate - response time in milliseconds: 316
+1 < 200
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:11:57 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee4d-072a7a1768b05cb7192cf81d;Parent=5337227e2ab0c441;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: 179d109e-c19a-4921-a85a-ee23ace39307
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMosGEj2IAMEuxA=
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 b40559257aa0d5961c9e29610a10c196.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: kNdkRWHHTf5lBDIMvtNJIBRHNHlJOX-qsbmTPAwXOyImduzOnMBKLQ==
+
+
+12:11:57.324 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 8: endpoint=delete-employees-id
+12:11:57.330 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/375ceaca-b04c-4624-bbxx-7183dd5895xx
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:57.540 [main] DEBUG com.intuit.karate - response time in milliseconds: 210
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:11:57 GMT
+1 < Pragma: no-cache
+1 < x-amzn-RequestId: d19cb4b9-fe2d-4d27-b7db-cc3f987a482b
+1 < Strict-Transport-Security: max-age=2592000
+1 < Allow: GET
+1 < x-amz-apigw-id: cMosKEEkIAMEPbw=
+1 < Cache-Control: no-cache,no-store
+1 < Expires: -1
+1 < X-Amzn-Trace-Id: Root=1-66b4ee4d-34f765024b5454635753a521;Parent=01cd09661d6223b4;Sampled=0;lineage=da2a2ef2:0
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 09f58b6f90930f04b2d074e90fe653f6.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: hqZhvCDJludxj-fTVw23ysdUFoUIfiYhsfUJJ4TodxrKqrId6Qpqyw==
+
+
+---------------------------------------------------------
+feature: classpath:karate/tests/delete-employees-id.feature
+scenarios:  6 | passed:  6 | failed:  0 | time: 1.7778
+---------------------------------------------------------
+
+12:11:57.877 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (0 remaining) classpath:karate/tests/delete-employees-id.feature
+12:11:57.884 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 15: endpoint=get-employees-id
+12:11:57.888 [main] DEBUG com.intuit.karate - request:
+1 > GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/12345
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:58.537 [main] DEBUG com.intuit.karate - response time in milliseconds: 648
+1 < 500
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 3612
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:11:58 GMT
+1 < Pragma: no-cache
+1 < x-amzn-RequestId: 43140787-35f0-4ef1-8ddb-a34439a1545d
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMosPE2oIAMEZxQ=
+1 < Cache-Control: no-cache,no-store
+1 < Expires: -1
+1 < X-Amzn-Trace-Id: Root=1-66b4ee4e-6bdee7a575c2cec353e2decc;Parent=4233e87a02cee0a1;Sampled=0;lineage=da2a2ef2:0
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 e5390f800690cfa4bd359d02b9b69064.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: 54D4hvt9ACwYD2c53G-zT3UF-fA-HnaCySKK-jqq2yYBYDfSba4Lhg==
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Error - Paylocity Benefits Dashboard</title>
+
+  
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+<meta name="x-stylesheet-fallback-test" content="" class="sr-only" /><script>!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName("SCRIPT"),h=g[g.length-1].previousElementSibling,i=f.defaultView&&f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&&i[a]!==b)for(e=0;e<c.length;e++)f.write('<link href="'+c[e]+'" '+d+"/>")}("position","absolute",["/Prod/lib/bootstrap/dist/css/bootstrap.min.css"], "rel=\u0022stylesheet\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-ggOyR0iXCbMQv3Xipma34MD\u002BdH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\u0022 ");</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
+  
+  <link rel="stylesheet" href="/Prod/css/site.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom mb-3">
+      <div class="container">
+        <a class="navbar-brand" href="/Prod/Benefits">Paylocity Benefits Dashboard</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main role="main" class="pb-3">
+      
+
+<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">An error occurred while processing your request.</h2>
+
+  <p>
+    <strong>Request ID:</strong> <code>0HN5NOJA3G0KE</code>
+  </p>
+
+<h3>Development Mode</h3>
+
+<p>
+  Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
+</p>
+
+<p>
+  <strong>The Development environment shouldn't be enabled for deployed applications.</strong>
+  It can result in displaying sensitive information from exceptions to end users.
+  For local debugging, enable the <strong>Development</strong> environment by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>
+  and restarting the app.
+</p>
+
+    </main>
+  </div>
+
+  <footer class="border-top footer text-muted">
+    <div class="container">
+      &copy; 2024 - Paylocity
+    </div>
+  </footer>
+
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+    </script>
+<script>(window.jQuery||document.write("\u003Cscript src=\u0022/Prod/lib/jquery/dist/jquery.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\u0022\u003E\u003C/script\u003E"));</script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+    </script>
+<script>(window.jQuery && window.jQuery.fn && window.jQuery.fn.modal||document.write("\u003Cscript src=\u0022/Prod/lib/bootstrap/dist/js/bootstrap.bundle.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-xrRywqdh3PHs8keKZN\u002B8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o\u0022\u003E\u003C/script\u003E"));</script>
+  
+  <script src="/Prod/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+
+  
+</body>
+</html>
+
+
+12:11:58.547 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 15: endpoint=get-employees-id
+12:11:58.554 [main] DEBUG com.intuit.karate - request:
+1 > GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/foo
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:58.789 [main] DEBUG com.intuit.karate - response time in milliseconds: 235
+1 < 500
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 3612
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:11:58 GMT
+1 < Pragma: no-cache
+1 < x-amzn-RequestId: 958bd780-e0a6-4bb5-a909-dbe0f2548291
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMosWEcjoAMEOcQ=
+1 < Cache-Control: no-cache,no-store
+1 < Expires: -1
+1 < X-Amzn-Trace-Id: Root=1-66b4ee4e-09574ee50e588f9d298209b5;Parent=734a93990fde154c;Sampled=0;lineage=da2a2ef2:0
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 f154cde4181f98fadc712cec9f8ab060.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: vTu92g44bWZq-AclQ4YuvVGz3Wmu1g89qEeKaf0rE058RHdXxqxw0Q==
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Error - Paylocity Benefits Dashboard</title>
+
+  
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+<meta name="x-stylesheet-fallback-test" content="" class="sr-only" /><script>!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName("SCRIPT"),h=g[g.length-1].previousElementSibling,i=f.defaultView&&f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&&i[a]!==b)for(e=0;e<c.length;e++)f.write('<link href="'+c[e]+'" '+d+"/>")}("position","absolute",["/Prod/lib/bootstrap/dist/css/bootstrap.min.css"], "rel=\u0022stylesheet\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-ggOyR0iXCbMQv3Xipma34MD\u002BdH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\u0022 ");</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
+  
+  <link rel="stylesheet" href="/Prod/css/site.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom mb-3">
+      <div class="container">
+        <a class="navbar-brand" href="/Prod/Benefits">Paylocity Benefits Dashboard</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main role="main" class="pb-3">
+      
+
+<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">An error occurred while processing your request.</h2>
+
+  <p>
+    <strong>Request ID:</strong> <code>0HN5NOJA3G0KF</code>
+  </p>
+
+<h3>Development Mode</h3>
+
+<p>
+  Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
+</p>
+
+<p>
+  <strong>The Development environment shouldn't be enabled for deployed applications.</strong>
+  It can result in displaying sensitive information from exceptions to end users.
+  For local debugging, enable the <strong>Development</strong> environment by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>
+  and restarting the app.
+</p>
+
+    </main>
+  </div>
+
+  <footer class="border-top footer text-muted">
+    <div class="container">
+      &copy; 2024 - Paylocity
+    </div>
+  </footer>
+
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+    </script>
+<script>(window.jQuery||document.write("\u003Cscript src=\u0022/Prod/lib/jquery/dist/jquery.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\u0022\u003E\u003C/script\u003E"));</script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+    </script>
+<script>(window.jQuery && window.jQuery.fn && window.jQuery.fn.modal||document.write("\u003Cscript src=\u0022/Prod/lib/bootstrap/dist/js/bootstrap.bundle.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-xrRywqdh3PHs8keKZN\u002B8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o\u0022\u003E\u003C/script\u003E"));</script>
+  
+  <script src="/Prod/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+
+  
+</body>
+</html>
+
+
+12:11:58.797 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 15: endpoint=get-employees-id
+12:11:58.801 [main] DEBUG com.intuit.karate - request:
+1 > GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/1234
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:59.043 [main] DEBUG com.intuit.karate - response time in milliseconds: 241
+1 < 500
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 3612
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:11:59 GMT
+1 < Pragma: no-cache
+1 < x-amzn-RequestId: c149d796-256d-425a-8e26-c4e045315e8b
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMosYGR1IAMEndg=
+1 < Cache-Control: no-cache,no-store
+1 < Expires: -1
+1 < X-Amzn-Trace-Id: Root=1-66b4ee4e-762439e8455f752976f8bc12;Parent=75f699686d3f5bd9;Sampled=0;lineage=da2a2ef2:0
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 f6f36f0a4bfc6440d567d2cc5ed4f414.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: c7JUBzbvs-9r1n6AMRdfH8swwKdj_XUhf-2tl-Qw8PNsakj9yL-2hw==
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Error - Paylocity Benefits Dashboard</title>
+
+  
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+<meta name="x-stylesheet-fallback-test" content="" class="sr-only" /><script>!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName("SCRIPT"),h=g[g.length-1].previousElementSibling,i=f.defaultView&&f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&&i[a]!==b)for(e=0;e<c.length;e++)f.write('<link href="'+c[e]+'" '+d+"/>")}("position","absolute",["/Prod/lib/bootstrap/dist/css/bootstrap.min.css"], "rel=\u0022stylesheet\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-ggOyR0iXCbMQv3Xipma34MD\u002BdH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\u0022 ");</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
+  
+  <link rel="stylesheet" href="/Prod/css/site.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom mb-3">
+      <div class="container">
+        <a class="navbar-brand" href="/Prod/Benefits">Paylocity Benefits Dashboard</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main role="main" class="pb-3">
+      
+
+<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">An error occurred while processing your request.</h2>
+
+  <p>
+    <strong>Request ID:</strong> <code>0HN5NOJA3G0KG</code>
+  </p>
+
+<h3>Development Mode</h3>
+
+<p>
+  Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
+</p>
+
+<p>
+  <strong>The Development environment shouldn't be enabled for deployed applications.</strong>
+  It can result in displaying sensitive information from exceptions to end users.
+  For local debugging, enable the <strong>Development</strong> environment by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>
+  and restarting the app.
+</p>
+
+    </main>
+  </div>
+
+  <footer class="border-top footer text-muted">
+    <div class="container">
+      &copy; 2024 - Paylocity
+    </div>
+  </footer>
+
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+    </script>
+<script>(window.jQuery||document.write("\u003Cscript src=\u0022/Prod/lib/jquery/dist/jquery.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\u0022\u003E\u003C/script\u003E"));</script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+    </script>
+<script>(window.jQuery && window.jQuery.fn && window.jQuery.fn.modal||document.write("\u003Cscript src=\u0022/Prod/lib/bootstrap/dist/js/bootstrap.bundle.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-xrRywqdh3PHs8keKZN\u002B8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o\u0022\u003E\u003C/script\u003E"));</script>
+  
+  <script src="/Prod/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+
+  
+</body>
+</html>
+
+
+12:11:59.050 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 15: endpoint=get-employees-id
+12:11:59.054 [main] DEBUG com.intuit.karate - request:
+1 > GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/375ceaca-b04c-4624-bbaa-7183dd5895bb
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:59.386 [main] DEBUG com.intuit.karate - response time in milliseconds: 329
+1 < 200
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:11:59 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee4f-2a3642450b0e3b9c50d2b2b2;Parent=79f023125f7a7505;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: e790c7df-71ad-4dcd-ba10-b6253e56de19
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMosbHXrIAMEISA=
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 b97ae744144c7c472752110c480bad34.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: tnVX8YQS7PW_ABzShAqDkqaGoSqoYoAgqhsNfeFPmdzfhkFjwiMbKA==
+
+
+12:11:59.397 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 15: endpoint=get-employees-id
+12:11:59.402 [main] DEBUG com.intuit.karate - request:
+1 > GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/375ceaca-b04c-4624-bbxx-7183dd5895xx
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:59.611 [main] DEBUG com.intuit.karate - response time in milliseconds: 209
+1 < 500
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 3612
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:11:59 GMT
+1 < Pragma: no-cache
+1 < x-amzn-RequestId: 762cbcd8-bb8e-4231-9e56-b0a8df026907
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMoseHCCIAMEByg=
+1 < Cache-Control: no-cache,no-store
+1 < Expires: -1
+1 < X-Amzn-Trace-Id: Root=1-66b4ee4f-10b7bc557f859a083e552aac;Parent=0c2e780b5a87caea;Sampled=0;lineage=da2a2ef2:0
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 f154cde4181f98fadc712cec9f8ab060.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: bSPNwTiJhdXAY2z-EEvKEr9f9JFCJlbtRaxazXkgOh7BHyJZDS2I2Q==
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Error - Paylocity Benefits Dashboard</title>
+
+  
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+<meta name="x-stylesheet-fallback-test" content="" class="sr-only" /><script>!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName("SCRIPT"),h=g[g.length-1].previousElementSibling,i=f.defaultView&&f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&&i[a]!==b)for(e=0;e<c.length;e++)f.write('<link href="'+c[e]+'" '+d+"/>")}("position","absolute",["/Prod/lib/bootstrap/dist/css/bootstrap.min.css"], "rel=\u0022stylesheet\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-ggOyR0iXCbMQv3Xipma34MD\u002BdH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\u0022 ");</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
+  
+  <link rel="stylesheet" href="/Prod/css/site.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom mb-3">
+      <div class="container">
+        <a class="navbar-brand" href="/Prod/Benefits">Paylocity Benefits Dashboard</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main role="main" class="pb-3">
+      
+
+<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">An error occurred while processing your request.</h2>
+
+  <p>
+    <strong>Request ID:</strong> <code>0HN5NOJA3G0KH</code>
+  </p>
+
+<h3>Development Mode</h3>
+
+<p>
+  Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
+</p>
+
+<p>
+  <strong>The Development environment shouldn't be enabled for deployed applications.</strong>
+  It can result in displaying sensitive information from exceptions to end users.
+  For local debugging, enable the <strong>Development</strong> environment by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>
+  and restarting the app.
+</p>
+
+    </main>
+  </div>
+
+  <footer class="border-top footer text-muted">
+    <div class="container">
+      &copy; 2024 - Paylocity
+    </div>
+  </footer>
+
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+    </script>
+<script>(window.jQuery||document.write("\u003Cscript src=\u0022/Prod/lib/jquery/dist/jquery.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\u0022\u003E\u003C/script\u003E"));</script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+    </script>
+<script>(window.jQuery && window.jQuery.fn && window.jQuery.fn.modal||document.write("\u003Cscript src=\u0022/Prod/lib/bootstrap/dist/js/bootstrap.bundle.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-xrRywqdh3PHs8keKZN\u002B8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o\u0022\u003E\u003C/script\u003E"));</script>
+  
+  <script src="/Prod/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+
+  
+</body>
+</html>
+
+
+---------------------------------------------------------
+feature: classpath:karate/tests/get-employees-id.feature
+scenarios:  5 | passed:  5 | failed:  0 | time: 1.7139
+---------------------------------------------------------
+
+12:11:59.682 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 7 (0 remaining) classpath:karate/tests/get-employees-id.feature
+12:11:59.687 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 23: endpoint=get-employees
+12:11:59.690 [main] DEBUG com.intuit.karate - request:
+1 > GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:12:00.073 [main] DEBUG com.intuit.karate - response time in milliseconds: 380
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 11483
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:00 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee4f-61b6fa4c145ae9195be8a11f;Parent=70b2641e9c027713;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: 12708561-096d-49cc-bf23-b190737c49df
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMoshF-VIAMEamw=
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 6edb5951ff8ac41a5bd6a31d01902240.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: CY5LOBRFtg3Pis-vW2UI1UeIORX3Ri1EJLnRSoPh_0QUODOto9yHXQ==
+[
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "005d6886-28ef-4209-829e-ecc2af9e6168",
+    "username": "TestUser407",
+    "id": "005d6886-28ef-4209-829e-ecc2af9e6168",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T15:47:57+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "16234417-3e57-4b42-ab45-0adc81d1ef96",
+    "username": "TestUser407",
+    "id": "16234417-3e57-4b42-ab45-0adc81d1ef96",
+    "firstName": "Killy",
+    "lastName": "Williams",
+    "dependants": 2,
+    "expiration": "2024-09-08T13:22:38+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "1af81a68-c473-48b0-bbfd-86768ef51388",
+    "username": "TestUser407",
+    "id": "1af81a68-c473-48b0-bbfd-86768ef51388",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T16:07:53+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "1e845edc-9d17-489f-b600-2b510bb94969",
+    "username": "TestUser407",
+    "id": "1e845edc-9d17-489f-b600-2b510bb94969",
+    "firstName": "Steve",
+    "lastName": "Rogers",
+    "dependants": 2,
+    "expiration": "2024-09-07T23:48:03+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "2609a596-98bf-4e83-9d98-2579910a9a1c",
+    "username": "TestUser407",
+    "id": "2609a596-98bf-4e83-9d98-2579910a9a1c",
+    "firstName": "Lee",
+    "lastName": "Yiu",
+    "dependants": 10,
+    "expiration": "2024-09-07T23:49:51+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 230.76926,
+    "net": 1769.2307
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "2c95700a-4b63-405e-8fa9-6ad9d073068e",
+    "username": "TestUser407",
+    "id": "2c95700a-4b63-405e-8fa9-6ad9d073068e",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T15:59:08+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "34c9a98e-6371-4dc2-b964-ac5e6cce97b2",
+    "username": "TestUser407",
+    "id": "34c9a98e-6371-4dc2-b964-ac5e6cce97b2",
+    "firstName": "Killy",
+    "lastName": "Williams",
+    "dependants": 2,
+    "expiration": "2024-09-08T13:22:37+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "375ceacc-b04c-4624-bbaa-7183dd5895ba",
+    "username": "TestUser407",
+    "id": "375ceacc-b04c-4624-bbaa-7183dd5895ba",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T03:56:44+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "3c96b0fa-bd34-4402-97a2-91906c74f351",
+    "username": "TestUser407",
+    "id": "3c96b0fa-bd34-4402-97a2-91906c74f351",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:58:12+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "41771a37-6175-426c-bd14-7ed44e412003",
+    "username": "TestUser407",
+    "id": "41771a37-6175-426c-bd14-7ed44e412003",
+    "firstName": "Shawn-updated",
+    "lastName": "Rs-updated",
+    "dependants": 2,
+    "expiration": "2024-09-08T03:01:51+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "422f638a-d843-4a7e-9b54-884ee320ab8a",
+    "username": "TestUser407",
+    "id": "422f638a-d843-4a7e-9b54-884ee320ab8a",
+    "firstName": "any",
+    "lastName": "any",
+    "dependants": 1,
+    "expiration": "2024-09-08T15:40:32+00:00",
+    "salary": 0,
+    "gross": 0,
+    "benefitsCost": 57.69231,
+    "net": -57.69231
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "44383831-2178-4c11-8a56-662f9072fc5a",
+    "username": "TestUser407",
+    "id": "44383831-2178-4c11-8a56-662f9072fc5a",
+    "firstName": "Lara",
+    "lastName": "Kim",
+    "dependants": 20,
+    "expiration": "2024-09-07T23:50:39+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 423.07697,
+    "net": 1576.9231
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "5eab4063-ad3e-4547-8a9b-30cdf4381d84",
+    "username": "TestUser407",
+    "id": "5eab4063-ad3e-4547-8a9b-30cdf4381d84",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:52:07+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "5faf2dc9-657c-4edd-b17e-d009c44d2d0d",
+    "username": "TestUser407",
+    "id": "5faf2dc9-657c-4edd-b17e-d009c44d2d0d",
+    "firstName": "James",
+    "lastName": "Wille",
+    "dependants": 11,
+    "expiration": "2024-09-07T23:49:17+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 250,
+    "net": 1750
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "62871850-a789-4cc8-9abb-eb0572a5c4ca",
+    "username": "TestUser407",
+    "id": "62871850-a789-4cc8-9abb-eb0572a5c4ca",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 1,
+    "expiration": "2024-09-08T03:56:45+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 57.69231,
+    "net": 1942.3077
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "64e9ed09-b544-44bf-a5d3-a1f4f9eab931",
+    "username": "TestUser407",
+    "id": "64e9ed09-b544-44bf-a5d3-a1f4f9eab931",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 1,
+    "expiration": "2024-09-08T03:47:09+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 57.69231,
+    "net": 1942.3077
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "6a5749ac-b765-4f56-be3e-a5b77aeafe26",
+    "username": "TestUser407",
+    "id": "6a5749ac-b765-4f56-be3e-a5b77aeafe26",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:36:03+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "6b0dedfb-5a82-48f5-b461-60e560914702",
+    "username": "TestUser407",
+    "id": "6b0dedfb-5a82-48f5-b461-60e560914702",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T16:07:09+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "6ce37678-df1f-4ee1-92c8-67116a144dd4",
+    "username": "TestUser407",
+    "id": "6ce37678-df1f-4ee1-92c8-67116a144dd4",
+    "firstName": "David",
+    "lastName": "Warr",
+    "dependants": 0,
+    "expiration": "2024-09-08T00:00:28+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "73be35ea-d68f-4ead-9e17-35c2b64cb1fb",
+    "username": "TestUser407",
+    "id": "73be35ea-d68f-4ead-9e17-35c2b64cb1fb",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 1,
+    "expiration": "2024-09-08T03:40:11+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 57.69231,
+    "net": 1942.3077
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "7a901dbf-e6c3-4f5f-bd23-a43ff9d951bf",
+    "username": "TestUser407",
+    "id": "7a901dbf-e6c3-4f5f-bd23-a43ff9d951bf",
+    "firstName": "any",
+    "lastName": "any",
+    "dependants": 1,
+    "expiration": "2024-09-08T15:36:36+00:00",
+    "salary": 0,
+    "gross": 0,
+    "benefitsCost": 57.69231,
+    "net": -57.69231
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "801af182-3a5f-4508-aef5-320c7144c440",
+    "username": "TestUser407",
+    "id": "801af182-3a5f-4508-aef5-320c7144c440",
+    "firstName": "Killy",
+    "lastName": "Williams",
+    "dependants": 2,
+    "expiration": "2024-09-08T13:22:38+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "91f87a7d-b21c-4147-bb29-dee66736f54f",
+    "username": "TestUser407",
+    "id": "91f87a7d-b21c-4147-bb29-dee66736f54f",
+    "firstName": "Killy",
+    "lastName": "Williams",
+    "dependants": 2,
+    "expiration": "2024-09-08T13:22:38+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "981e6c89-a3d1-4720-870f-c7285e9f3fb6",
+    "username": "TestUser407",
+    "id": "981e6c89-a3d1-4720-870f-c7285e9f3fb6",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T03:40:10+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "99f6e75a-6624-49db-8dbe-18cb96a682ce",
+    "username": "TestUser407",
+    "id": "99f6e75a-6624-49db-8dbe-18cb96a682ce",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T16:08:42+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "a60de221-e162-4ac3-b910-437aa6ae7adf",
+    "username": "TestUser407",
+    "id": "a60de221-e162-4ac3-b910-437aa6ae7adf",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:51:40+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "b38bcb10-ffbe-4631-acf8-2501cc00aaab",
+    "username": "TestUser407",
+    "id": "b38bcb10-ffbe-4631-acf8-2501cc00aaab",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:58:41+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "b907771a-af90-46f1-b499-5c18a1759ec3",
+    "username": "TestUser407",
+    "id": "b907771a-af90-46f1-b499-5c18a1759ec3",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:56:14+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "bb0d33b7-5dbd-4216-922f-c367dbc622e1",
+    "username": "TestUser407",
+    "id": "bb0d33b7-5dbd-4216-922f-c367dbc622e1",
+    "firstName": "Killy",
+    "lastName": "Williams",
+    "dependants": 2,
+    "expiration": "2024-09-08T13:22:39+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "bd0e55ea-cac7-4a5a-9d5a-9edcbeb700bc",
+    "username": "TestUser407",
+    "id": "bd0e55ea-cac7-4a5a-9d5a-9edcbeb700bc",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:50:56+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "c3587573-9cd6-4676-a41c-4dda01d54a82",
+    "username": "TestUser407",
+    "id": "c3587573-9cd6-4676-a41c-4dda01d54a82",
+    "firstName": "Kayle-update",
+    "lastName": "Lar",
+    "dependants": 20,
+    "expiration": "2024-09-08T02:59:31+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 423.07697,
+    "net": 1576.9231
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "c813f42e-3dea-4355-ab13-eb5ef6e4ab0e",
+    "username": "TestUser407",
+    "id": "c813f42e-3dea-4355-ab13-eb5ef6e4ab0e",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T03:47:11+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "d4cad2af-192e-4336-bc2e-d7524459c137",
+    "username": "TestUser407",
+    "id": "d4cad2af-192e-4336-bc2e-d7524459c137",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:37:49+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "d70863b3-9f7f-401f-957e-cb46ed20a419",
+    "username": "TestUser407",
+    "id": "d70863b3-9f7f-401f-957e-cb46ed20a419",
+    "firstName": "Killy",
+    "lastName": "Williams",
+    "dependants": 2,
+    "expiration": "2024-09-08T13:22:38+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "df756aba-f24d-4bff-acb7-e119bc20e0ec",
+    "username": "TestUser407",
+    "id": "df756aba-f24d-4bff-acb7-e119bc20e0ec",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:48:43+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "f27618f9-6625-4ee0-873e-f3ff14a7e56b",
+    "username": "TestUser407",
+    "id": "f27618f9-6625-4ee0-873e-f3ff14a7e56b",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T03:35:59+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "f38584aa-8674-478e-8a61-20d1a6774d5a",
+    "username": "TestUser407",
+    "id": "f38584aa-8674-478e-8a61-20d1a6774d5a",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 1,
+    "expiration": "2024-09-08T15:47:57+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 57.69231,
+    "net": 1942.3077
+  }
+]
+
+
+---------------------------------------------------------
+feature: classpath:karate/tests/get-employees.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.4010
+---------------------------------------------------------
+
+12:12:00.112 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 7 (0 remaining) classpath:karate/tests/get-employees.feature
+12:12:00.117 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 31: endpoint=post-employees
+12:12:00.147 [main] DEBUG com.intuit.karate - request:
+1 > POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "firstName": "Shawn",
+  "lastName": "Rs",
+  "dependants": 2
+}
+
+
+12:12:00.340 [main] DEBUG com.intuit.karate - response time in milliseconds: 193
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 267
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:00 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee50-5538bb19281de0f15665e81c;Parent=17ab5b9bb9234d25;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: 5c55e07e-8351-4aa6-a0dc-adff79d6345b
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMosmEbHoAMERcQ=
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 c577ba8916969d30d0c51e46acfe11d4.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: Um4rqbvQFWJUuDsZKNbzOytnDMQiLkktW4ZBb9c8U1gRT7H3pOZC9Q==
+{
+  "partitionKey": "TestUser407",
+  "sortKey": "31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0",
+  "username": "TestUser407",
+  "id": "31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0",
+  "firstName": "Shawn",
+  "lastName": "Rs",
+  "dependants": 2,
+  "salary": 52000,
+  "gross": 2000,
+  "benefitsCost": 76.92308,
+  "net": 1923.0769
+}
+
+
+12:12:00.345 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 15: endpoint=get-employees-id
+12:12:00.350 [main] DEBUG com.intuit.karate - request:
+1 > GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:12:00.563 [main] DEBUG com.intuit.karate - response time in milliseconds: 212
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 308
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:00 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee50-4c55399c7849035241e64d25;Parent=4a6fe622106f1852;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: 93dd42aa-5548-49ed-9501-cfb765aec7b3
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMosoFguIAMEiKg=
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 e5390f800690cfa4bd359d02b9b69064.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: wTqnWKOnbSEQ3beK2y-L6gD1TQgk-1bnfNwlk5TRrmRnWcKle2DAWg==
+{
+  "partitionKey": "TestUser407",
+  "sortKey": "31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0",
+  "username": "TestUser407",
+  "id": "31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0",
+  "firstName": "Shawn",
+  "lastName": "Rs",
+  "dependants": 2,
+  "expiration": "2024-09-08T16:12:00+00:00",
+  "salary": 52000,
+  "gross": 2000,
+  "benefitsCost": 76.92308,
+  "net": 1923.0769
+}
+
+
+12:12:00.567 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 23: endpoint=get-employees
+12:12:00.571 [main] DEBUG com.intuit.karate - request:
+1 > GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:12:00.842 [main] DEBUG com.intuit.karate - response time in milliseconds: 269
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 11792
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:00 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee50-6045914f486ea13631019159;Parent=473538b455276d85;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: d12f93a9-844b-4866-82ba-e0f67dc552ea
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMosqFkyoAMEa5A=
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 cf64a4b926de5658989ce791a67893fa.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: L60ECS94cXx6IGX03REsk-rv7ij1yGm5oSjBg8ZzKDKfwB_6sAtRhQ==
+[
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "005d6886-28ef-4209-829e-ecc2af9e6168",
+    "username": "TestUser407",
+    "id": "005d6886-28ef-4209-829e-ecc2af9e6168",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T15:47:57+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "16234417-3e57-4b42-ab45-0adc81d1ef96",
+    "username": "TestUser407",
+    "id": "16234417-3e57-4b42-ab45-0adc81d1ef96",
+    "firstName": "Killy",
+    "lastName": "Williams",
+    "dependants": 2,
+    "expiration": "2024-09-08T13:22:38+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "1af81a68-c473-48b0-bbfd-86768ef51388",
+    "username": "TestUser407",
+    "id": "1af81a68-c473-48b0-bbfd-86768ef51388",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T16:07:53+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "1e845edc-9d17-489f-b600-2b510bb94969",
+    "username": "TestUser407",
+    "id": "1e845edc-9d17-489f-b600-2b510bb94969",
+    "firstName": "Steve",
+    "lastName": "Rogers",
+    "dependants": 2,
+    "expiration": "2024-09-07T23:48:03+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "2609a596-98bf-4e83-9d98-2579910a9a1c",
+    "username": "TestUser407",
+    "id": "2609a596-98bf-4e83-9d98-2579910a9a1c",
+    "firstName": "Lee",
+    "lastName": "Yiu",
+    "dependants": 10,
+    "expiration": "2024-09-07T23:49:51+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 230.76926,
+    "net": 1769.2307
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "2c95700a-4b63-405e-8fa9-6ad9d073068e",
+    "username": "TestUser407",
+    "id": "2c95700a-4b63-405e-8fa9-6ad9d073068e",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T15:59:08+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0",
+    "username": "TestUser407",
+    "id": "31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T16:12:00+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "34c9a98e-6371-4dc2-b964-ac5e6cce97b2",
+    "username": "TestUser407",
+    "id": "34c9a98e-6371-4dc2-b964-ac5e6cce97b2",
+    "firstName": "Killy",
+    "lastName": "Williams",
+    "dependants": 2,
+    "expiration": "2024-09-08T13:22:37+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "375ceacc-b04c-4624-bbaa-7183dd5895ba",
+    "username": "TestUser407",
+    "id": "375ceacc-b04c-4624-bbaa-7183dd5895ba",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T03:56:44+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "3c96b0fa-bd34-4402-97a2-91906c74f351",
+    "username": "TestUser407",
+    "id": "3c96b0fa-bd34-4402-97a2-91906c74f351",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:58:12+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "41771a37-6175-426c-bd14-7ed44e412003",
+    "username": "TestUser407",
+    "id": "41771a37-6175-426c-bd14-7ed44e412003",
+    "firstName": "Shawn-updated",
+    "lastName": "Rs-updated",
+    "dependants": 2,
+    "expiration": "2024-09-08T03:01:51+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "422f638a-d843-4a7e-9b54-884ee320ab8a",
+    "username": "TestUser407",
+    "id": "422f638a-d843-4a7e-9b54-884ee320ab8a",
+    "firstName": "any",
+    "lastName": "any",
+    "dependants": 1,
+    "expiration": "2024-09-08T15:40:32+00:00",
+    "salary": 0,
+    "gross": 0,
+    "benefitsCost": 57.69231,
+    "net": -57.69231
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "44383831-2178-4c11-8a56-662f9072fc5a",
+    "username": "TestUser407",
+    "id": "44383831-2178-4c11-8a56-662f9072fc5a",
+    "firstName": "Lara",
+    "lastName": "Kim",
+    "dependants": 20,
+    "expiration": "2024-09-07T23:50:39+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 423.07697,
+    "net": 1576.9231
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "5eab4063-ad3e-4547-8a9b-30cdf4381d84",
+    "username": "TestUser407",
+    "id": "5eab4063-ad3e-4547-8a9b-30cdf4381d84",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:52:07+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "5faf2dc9-657c-4edd-b17e-d009c44d2d0d",
+    "username": "TestUser407",
+    "id": "5faf2dc9-657c-4edd-b17e-d009c44d2d0d",
+    "firstName": "James",
+    "lastName": "Wille",
+    "dependants": 11,
+    "expiration": "2024-09-07T23:49:17+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 250,
+    "net": 1750
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "62871850-a789-4cc8-9abb-eb0572a5c4ca",
+    "username": "TestUser407",
+    "id": "62871850-a789-4cc8-9abb-eb0572a5c4ca",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 1,
+    "expiration": "2024-09-08T03:56:45+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 57.69231,
+    "net": 1942.3077
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "64e9ed09-b544-44bf-a5d3-a1f4f9eab931",
+    "username": "TestUser407",
+    "id": "64e9ed09-b544-44bf-a5d3-a1f4f9eab931",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 1,
+    "expiration": "2024-09-08T03:47:09+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 57.69231,
+    "net": 1942.3077
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "6a5749ac-b765-4f56-be3e-a5b77aeafe26",
+    "username": "TestUser407",
+    "id": "6a5749ac-b765-4f56-be3e-a5b77aeafe26",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:36:03+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "6b0dedfb-5a82-48f5-b461-60e560914702",
+    "username": "TestUser407",
+    "id": "6b0dedfb-5a82-48f5-b461-60e560914702",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T16:07:09+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "6ce37678-df1f-4ee1-92c8-67116a144dd4",
+    "username": "TestUser407",
+    "id": "6ce37678-df1f-4ee1-92c8-67116a144dd4",
+    "firstName": "David",
+    "lastName": "Warr",
+    "dependants": 0,
+    "expiration": "2024-09-08T00:00:28+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "73be35ea-d68f-4ead-9e17-35c2b64cb1fb",
+    "username": "TestUser407",
+    "id": "73be35ea-d68f-4ead-9e17-35c2b64cb1fb",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 1,
+    "expiration": "2024-09-08T03:40:11+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 57.69231,
+    "net": 1942.3077
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "7a901dbf-e6c3-4f5f-bd23-a43ff9d951bf",
+    "username": "TestUser407",
+    "id": "7a901dbf-e6c3-4f5f-bd23-a43ff9d951bf",
+    "firstName": "any",
+    "lastName": "any",
+    "dependants": 1,
+    "expiration": "2024-09-08T15:36:36+00:00",
+    "salary": 0,
+    "gross": 0,
+    "benefitsCost": 57.69231,
+    "net": -57.69231
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "801af182-3a5f-4508-aef5-320c7144c440",
+    "username": "TestUser407",
+    "id": "801af182-3a5f-4508-aef5-320c7144c440",
+    "firstName": "Killy",
+    "lastName": "Williams",
+    "dependants": 2,
+    "expiration": "2024-09-08T13:22:38+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "91f87a7d-b21c-4147-bb29-dee66736f54f",
+    "username": "TestUser407",
+    "id": "91f87a7d-b21c-4147-bb29-dee66736f54f",
+    "firstName": "Killy",
+    "lastName": "Williams",
+    "dependants": 2,
+    "expiration": "2024-09-08T13:22:38+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "981e6c89-a3d1-4720-870f-c7285e9f3fb6",
+    "username": "TestUser407",
+    "id": "981e6c89-a3d1-4720-870f-c7285e9f3fb6",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T03:40:10+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "99f6e75a-6624-49db-8dbe-18cb96a682ce",
+    "username": "TestUser407",
+    "id": "99f6e75a-6624-49db-8dbe-18cb96a682ce",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T16:08:42+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "a60de221-e162-4ac3-b910-437aa6ae7adf",
+    "username": "TestUser407",
+    "id": "a60de221-e162-4ac3-b910-437aa6ae7adf",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:51:40+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "b38bcb10-ffbe-4631-acf8-2501cc00aaab",
+    "username": "TestUser407",
+    "id": "b38bcb10-ffbe-4631-acf8-2501cc00aaab",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:58:41+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "b907771a-af90-46f1-b499-5c18a1759ec3",
+    "username": "TestUser407",
+    "id": "b907771a-af90-46f1-b499-5c18a1759ec3",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:56:14+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "bb0d33b7-5dbd-4216-922f-c367dbc622e1",
+    "username": "TestUser407",
+    "id": "bb0d33b7-5dbd-4216-922f-c367dbc622e1",
+    "firstName": "Killy",
+    "lastName": "Williams",
+    "dependants": 2,
+    "expiration": "2024-09-08T13:22:39+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "bd0e55ea-cac7-4a5a-9d5a-9edcbeb700bc",
+    "username": "TestUser407",
+    "id": "bd0e55ea-cac7-4a5a-9d5a-9edcbeb700bc",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:50:56+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "c3587573-9cd6-4676-a41c-4dda01d54a82",
+    "username": "TestUser407",
+    "id": "c3587573-9cd6-4676-a41c-4dda01d54a82",
+    "firstName": "Kayle-update",
+    "lastName": "Lar",
+    "dependants": 20,
+    "expiration": "2024-09-08T02:59:31+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 423.07697,
+    "net": 1576.9231
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "c813f42e-3dea-4355-ab13-eb5ef6e4ab0e",
+    "username": "TestUser407",
+    "id": "c813f42e-3dea-4355-ab13-eb5ef6e4ab0e",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T03:47:11+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "d4cad2af-192e-4336-bc2e-d7524459c137",
+    "username": "TestUser407",
+    "id": "d4cad2af-192e-4336-bc2e-d7524459c137",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:37:49+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "d70863b3-9f7f-401f-957e-cb46ed20a419",
+    "username": "TestUser407",
+    "id": "d70863b3-9f7f-401f-957e-cb46ed20a419",
+    "firstName": "Killy",
+    "lastName": "Williams",
+    "dependants": 2,
+    "expiration": "2024-09-08T13:22:38+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "df756aba-f24d-4bff-acb7-e119bc20e0ec",
+    "username": "TestUser407",
+    "id": "df756aba-f24d-4bff-acb7-e119bc20e0ec",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 2,
+    "expiration": "2024-09-08T02:48:43+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 76.92308,
+    "net": 1923.0769
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "f27618f9-6625-4ee0-873e-f3ff14a7e56b",
+    "username": "TestUser407",
+    "id": "f27618f9-6625-4ee0-873e-f3ff14a7e56b",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 0,
+    "expiration": "2024-09-08T03:35:59+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 38.46154,
+    "net": 1961.5385
+  },
+  {
+    "partitionKey": "TestUser407",
+    "sortKey": "f38584aa-8674-478e-8a61-20d1a6774d5a",
+    "username": "TestUser407",
+    "id": "f38584aa-8674-478e-8a61-20d1a6774d5a",
+    "firstName": "Shawn",
+    "lastName": "Rs",
+    "dependants": 1,
+    "expiration": "2024-09-08T15:47:57+00:00",
+    "salary": 52000,
+    "gross": 2000,
+    "benefitsCost": 57.69231,
+    "net": 1942.3077
+  }
+]
+
+
+12:12:00.862 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'requestBody' with new value: { firstName:"Shawn-updated",lastName:"Rs-updated",dependants: 2, id: "#(employeeId)"}
+12:12:00.864 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 39: endpoint=put-employees-id
+12:12:00.867 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 112
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "firstName": "Shawn-updated",
+  "lastName": "Rs-updated",
+  "dependants": 2,
+  "id": "31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0"
+}
+
+
+12:12:01.122 [main] DEBUG com.intuit.karate - response time in milliseconds: 253
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 283
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:01 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee51-104449801d5c03ca58196044;Parent=0519168a70501795;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: 5310a71e-9dc3-474f-84c2-a2bcc9debd8f
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMostG7YoAMEt6Q=
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 9194c442b098b961aed83447bc467cb6.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: Xji-6ryfNJc4wTg3aV83U__pdCacd-1LDLbCDjl0VnU0wS64mgvBzA==
+{
+  "partitionKey": "TestUser407",
+  "sortKey": "31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0",
+  "username": "TestUser407",
+  "id": "31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0",
+  "firstName": "Shawn-updated",
+  "lastName": "Rs-updated",
+  "dependants": 2,
+  "salary": 52000,
+  "gross": 2000,
+  "benefitsCost": 76.92308,
+  "net": 1923.0769
+}
+
+
+12:12:01.126 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 8: endpoint=delete-employees-id
+12:12:01.129 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:12:01.339 [main] DEBUG com.intuit.karate - response time in milliseconds: 210
+1 < 200
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:01 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee51-1388a19c128d0e1d056467f2;Parent=4ce23ec02017a041;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: d85c1791-3f32-4d85-a617-52153af87401
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMoswE1OoAMEInA=
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 e5390f800690cfa4bd359d02b9b69064.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: Z04Qje7pgyLNA8pH68LJbdqzeBdK_eXwWFGRU9udcAS0hisFgHHG7g==
+
+
+12:12:01.350 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 31: endpoint=post-employees
+12:12:01.354 [main] DEBUG com.intuit.karate - request:
+1 > POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 32
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "lastName": "Rs",
+  "dependants": 2
+}
+
+
+12:12:01.564 [main] DEBUG com.intuit.karate - response time in milliseconds: 210
+1 < 400
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 81
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:01 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee51-56152cb867b88c5f5de11e97;Parent=7585fb2012abd096;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: 9be11410-f7d7-4431-b0e9-1c379e0c20fc
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMosyF6WIAMEuEQ=
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 df8b3bc606f25025fcf4b59c26a0553e.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: iOBC_InJlnitX1cLstBhppr2IX58b5N5ihIUVxpoqtS5ztqCwnh5FQ==
+[
+  {
+    "memberNames": [
+      "FirstName"
+    ],
+    "errorMessage": "The FirstName field is required."
+  }
+]
+
+
+12:12:01.570 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 31: endpoint=post-employees
+12:12:01.572 [main] DEBUG com.intuit.karate - request:
+1 > POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 16
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "dependants": 2
+}
+
+
+12:12:01.842 [main] DEBUG com.intuit.karate - response time in milliseconds: 269
+1 < 400
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 159
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:01 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee51-361a452a6b4b29b9070c27f8;Parent=27dda1be6fa0fcf4;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: 5f0d26dc-d2ce-44e8-b2c7-c18821779219
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMos0EqWIAMEtQQ=
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 e28a59cb1d70a8631f80067d8aed6838.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: R2fZ-0tgwDIx71j0IG-9HiWmJVUA1YRC2a8-0aDzwRCeN6Rj1GN9Rg==
+[
+  {
+    "memberNames": [
+      "FirstName"
+    ],
+    "errorMessage": "The FirstName field is required."
+  },
+  {
+    "memberNames": [
+      "LastName"
+    ],
+    "errorMessage": "The LastName field is required."
+  }
+]
+
+
+12:12:01.850 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 31: endpoint=post-employees
+12:12:01.855 [main] DEBUG com.intuit.karate - request:
+1 > POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 36
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "firstName": "Shawn",
+  "dependants": 2
+}
+
+
+12:12:02.079 [main] DEBUG com.intuit.karate - response time in milliseconds: 223
+1 < 400
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:02 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee52-1d58cfc4589b592d7807a75f;Parent=4ddec15548db5b9e;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: 4031c503-e56d-4a80-a827-3503bf3be756
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMos3G6xIAMEqyg=
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 6edb5951ff8ac41a5bd6a31d01902240.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: dzAR2gf3LY3ttKZ2FOUObtE-CvLQGJ8up5hILWaYKGNLgafKZEfWzQ==
+[
+  {
+    "memberNames": [
+      "LastName"
+    ],
+    "errorMessage": "The LastName field is required."
+  }
+]
+
+
+12:12:02.087 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 31: endpoint=post-employees
+12:12:02.091 [main] DEBUG com.intuit.karate - request:
+1 > POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "firstName": "Shawn",
+  "lastName": "Rs"
+}
+
+
+12:12:02.325 [main] DEBUG com.intuit.karate - response time in milliseconds: 232
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 267
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:02 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee52-1a4b13a848af3fee263cd118;Parent=184f4eaaa2dd5dfd;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: 35fd3c02-4026-41a9-af5f-6496710f021a
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMos5Fq8oAMEA2g=
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 f6f36f0a4bfc6440d567d2cc5ed4f414.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: IZcboSF8J0Xuy2axMyJJV0StTXCADFtbbl5F1bXDSCNK5EEwCMgOPg==
+{
+  "partitionKey": "TestUser407",
+  "sortKey": "00aff950-df0a-41d1-809c-7a3914e1cd42",
+  "username": "TestUser407",
+  "id": "00aff950-df0a-41d1-809c-7a3914e1cd42",
+  "firstName": "Shawn",
+  "lastName": "Rs",
+  "dependants": 0,
+  "salary": 52000,
+  "gross": 2000,
+  "benefitsCost": 38.46154,
+  "net": 1961.5385
+}
+
+
+12:12:02.334 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 31: endpoint=post-employees
+12:12:02.338 [main] DEBUG com.intuit.karate - request:
+1 > POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "firstName": "Shawn",
+  "lastName": "Rs",
+  "dependants": 33
+}
+
+
+12:12:02.540 [main] DEBUG com.intuit.karate - response time in milliseconds: 200
+1 < 400
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 96
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:02 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee52-389f7317717fb9b83d72a824;Parent=0e49c24482668a18;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: 2cff4753-7a0b-4bfa-8df7-19e5a36a4efd
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMos8FgLoAMEd8A=
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 f6f36f0a4bfc6440d567d2cc5ed4f414.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: fVjgE8GfWaO65vu9o_vBdbXIkZSrLdChCDJIbN3OeE_TN4EIyhK3Rg==
+[
+  {
+    "memberNames": [
+      "Dependants"
+    ],
+    "errorMessage": "The field Dependants must be between 0 and 32."
+  }
+]
+
+
+12:12:02.548 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 31: endpoint=post-employees
+12:12:02.551 [main] DEBUG com.intuit.karate - request:
+1 > POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "firstName": "Shawn",
+  "lastName": "Rs",
+  "dependants": -1
+}
+
+
+12:12:02.745 [main] DEBUG com.intuit.karate - response time in milliseconds: 193
+1 < 400
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 96
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:02 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee52-70490f6b00d17f65296b14d8;Parent=0c03a90d92281f24;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: 77218564-43da-47e5-9e9e-f555305386a4
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMos-FyOoAMEKsw=
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 6a7b4b41112304057a352630e969f514.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: OLXyrjfEzjaUJoB00d5AMYhOy88JLFcwFT6IS4UL7XfvmHaeueJXlA==
+[
+  {
+    "memberNames": [
+      "Dependants"
+    ],
+    "errorMessage": "The field Dependants must be between 0 and 32."
+  }
+]
+
+
+12:12:02.751 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 31: endpoint=post-employees
+12:12:02.754 [main] DEBUG com.intuit.karate - request:
+1 > POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "firstName": "Shawn",
+  "lastName": "Rs",
+  "dependants": 1000000000
+}
+
+
+12:12:03.045 [main] DEBUG com.intuit.karate - response time in milliseconds: 290
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:03 GMT
+1 < Pragma: no-cache
+1 < x-amzn-RequestId: c5357152-375a-4541-ab36-b10d25d2b696
+1 < Strict-Transport-Security: max-age=2592000
+1 < Allow: GET
+1 < x-amz-apigw-id: cMotAEuEoAMEIVg=
+1 < Cache-Control: no-cache,no-store
+1 < Expires: -1
+1 < X-Amzn-Trace-Id: Root=1-66b4ee52-3cc5d9fc7fe2f53c4903b6fb;Parent=499091920b9d6d48;Sampled=0;lineage=da2a2ef2:0
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 139066808b80781047032e03c4f8e672.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: 8AND6LtdR_BMWApjmri1loaplN0gWwbofy89_t_s_Y1BM7w5vvg6Xg==
+
+
+12:12:03.053 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 31: endpoint=post-employees
+12:12:03.058 [main] DEBUG com.intuit.karate - request:
+1 > POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 2
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+}
+
+
+12:12:03.280 [main] DEBUG com.intuit.karate - response time in milliseconds: 222
+1 < 400
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 159
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:03 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee53-237d27730fa96cfe28da9a79;Parent=22917f1912e97927;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: 3b493604-888f-40b1-8c0b-234eb8d00433
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMotDFvToAMEFog=
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 533a5d9af0ba89d040a59600c6a91ff4.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: RBRMHdbgEpuDG_2ncOdrijcyDkaYWxiZVHLudHeZFbrXuD24_yOkfg==
+[
+  {
+    "memberNames": [
+      "FirstName"
+    ],
+    "errorMessage": "The FirstName field is required."
+  },
+  {
+    "memberNames": [
+      "LastName"
+    ],
+    "errorMessage": "The LastName field is required."
+  }
+]
+
+
+---------------------------------------------------------
+feature: classpath:karate/tests/post-employees.feature
+scenarios:  9 | passed:  9 | failed:  0 | time: 3.1301
+---------------------------------------------------------
+
+12:12:03.396 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 7 (0 remaining) classpath:karate/tests/post-employees.feature
+12:12:03.402 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read(endpoints.postEmployees) {expectedStatus: 200, requestBody: { firstName:"Killy",lastName:"Williams",dependants: 2}}
+12:12:03.402 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 31: endpoint=post-employees
+12:12:03.404 [main] DEBUG com.intuit.karate - request:
+1 > POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 58
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "firstName": "Killy",
+  "lastName": "Williams",
+  "dependants": 2
+}
+
+
+12:12:03.742 [main] DEBUG com.intuit.karate - response time in milliseconds: 337
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 273
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:03 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee53-1e19bbb24a3b5d5163bf69bc;Parent=7d4b53268d1fc8aa;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: de75f853-cf91-4f8c-9a11-fb2ba7028c1b
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMotHFq6oAMEYVw=
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 7388b83022a79421f484bdac704f938a.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: ObcSG6Y-FtzQwTbScflTsxdwDCOF5dQO_LTk630ij2AUArrNDdnLHQ==
+{
+  "partitionKey": "TestUser407",
+  "sortKey": "74b989c4-dd85-4a93-90e1-cb3701f3a271",
+  "username": "TestUser407",
+  "id": "74b989c4-dd85-4a93-90e1-cb3701f3a271",
+  "firstName": "Killy",
+  "lastName": "Williams",
+  "dependants": 2,
+  "salary": 52000,
+  "gross": 2000,
+  "benefitsCost": 76.92308,
+  "net": 1923.0769
+}
+
+
+12:12:03.746 [main] INFO  com.intuit.karate - << lock released, cached callonce: read(endpoints.postEmployees) {expectedStatus: 200, requestBody: { firstName:"Killy",lastName:"Williams",dependants: 2}}
+12:12:03.753 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 39: endpoint=put-employees-id
+12:12:03.758 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 63
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "firstName": "any",
+  "lastName": "any",
+  "dependants": 1,
+  "id": "1234"
+}
+
+
+12:12:04.022 [main] DEBUG com.intuit.karate - response time in milliseconds: 264
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:04 GMT
+1 < Pragma: no-cache
+1 < x-amzn-RequestId: bc7e6ecd-d835-4f82-8f97-8e34bef6f64f
+1 < Strict-Transport-Security: max-age=2592000
+1 < Allow: GET
+1 < x-amz-apigw-id: cMotKFZOIAMEUrQ=
+1 < Cache-Control: no-cache,no-store
+1 < Expires: -1
+1 < X-Amzn-Trace-Id: Root=1-66b4ee53-114d59cf3425125e5124a2df;Parent=03e3cd5d6adae4f3;Sampled=0;lineage=da2a2ef2:0
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 de54ac522d01ec848fc41c33d7d26410.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: ljlU-Vgcvirs7woPcl1LJIL4iThup1_Ol1-8_H2JOkPjBZnOc_1Xcw==
+
+
+12:12:04.032 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 39: endpoint=put-employees-id
+12:12:04.036 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "firstName": "any",
+  "lastName": "any",
+  "dependants": 1,
+  "id": 1234
+}
+
+
+12:12:04.242 [main] DEBUG com.intuit.karate - response time in milliseconds: 206
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:04 GMT
+1 < Pragma: no-cache
+1 < x-amzn-RequestId: 767c7440-c3c0-45d4-a2f9-91103d2e0499
+1 < Strict-Transport-Security: max-age=2592000
+1 < Allow: GET
+1 < x-amz-apigw-id: cMotNGlmIAMEWjg=
+1 < Cache-Control: no-cache,no-store
+1 < Expires: -1
+1 < X-Amzn-Trace-Id: Root=1-66b4ee54-5fa710b91446b881430d06c3;Parent=5fffc2c451795624;Sampled=0;lineage=da2a2ef2:0
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 d3db9a2e1a3d2fa6beb3724d68d89dc8.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: RlE7Vjp-MUF6HKZ9w4mRzxKVDp-rds26cQ_svvCU6IDYlM0d7BEEJQ==
+
+
+12:12:04.249 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 39: endpoint=put-employees-id
+12:12:04.252 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "firstName": "any",
+  "lastName": "any",
+  "dependants": 1,
+  "id": ""
+}
+
+
+12:12:04.463 [main] DEBUG com.intuit.karate - response time in milliseconds: 209
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:04 GMT
+1 < Pragma: no-cache
+1 < x-amzn-RequestId: efa86e7e-ae74-40f2-aa87-b6ac592ef27a
+1 < Strict-Transport-Security: max-age=2592000
+1 < Allow: GET
+1 < x-amz-apigw-id: cMotPGGMoAMEM8w=
+1 < Cache-Control: no-cache,no-store
+1 < Expires: -1
+1 < X-Amzn-Trace-Id: Root=1-66b4ee54-51a0e3045be195567fb3dff3;Parent=0395503082f5bb95;Sampled=0;lineage=da2a2ef2:0
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 c942cfe30baa723bd56d66d18e668b12.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: zpK3kuKtZxGh93GvcXf4Vxv1JbdZt7mW8Oha-PpFP_BQi79faZE0gA==
+
+
+12:12:04.472 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 39: endpoint=put-employees-id
+12:12:04.475 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 95
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "firstName": "any",
+  "lastName": "any",
+  "dependants": 1,
+  "id": "375ceaca-b04c-4624-bbxx-7183dd5895xx"
+}
+
+
+12:12:04.742 [main] DEBUG com.intuit.karate - response time in milliseconds: 266
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:04 GMT
+1 < Pragma: no-cache
+1 < x-amzn-RequestId: 0410f602-9b98-4502-97f4-9af17ef505c8
+1 < Strict-Transport-Security: max-age=2592000
+1 < Allow: GET
+1 < x-amz-apigw-id: cMotRHVPIAMEj5Q=
+1 < Cache-Control: no-cache,no-store
+1 < Expires: -1
+1 < X-Amzn-Trace-Id: Root=1-66b4ee54-49757cd93d04e0ee072dcab1;Parent=3661d2be987aa4ea;Sampled=0;lineage=da2a2ef2:0
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 652a36cca524228b11a07aa4660a0022.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: G2HCTIRDatFpCqWHUSthrIKzUV_kUXFEZgYnElOlkgpVM9y-aTgXQg==
+
+
+12:12:04.752 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 39: endpoint=put-employees-id
+12:12:04.755 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 95
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "firstName": "any",
+  "lastName": "any",
+  "dependants": 1,
+  "id": "375ceaca-b04c-4624-baaa-7183dd5895dd"
+}
+
+
+12:12:05.088 [main] DEBUG com.intuit.karate - response time in milliseconds: 332
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 259
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:05 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee54-573131671bb1f9730e57b76d;Parent=355cfabfdff9e18f;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: 81fe2dda-a14d-4392-a07c-aa829905315d
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMotUGU6oAMEH-w=
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 05f5208e50ebe19c944748fa098c71e0.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: yzE_fj4lzf2Kpl43wgOVEjr_jnuXe3D4R6F-CdGxsDML8TaljJYnBw==
+{
+  "partitionKey": "TestUser407",
+  "sortKey": "1963c39e-edfd-41ea-be90-75cc3a40e1b9",
+  "username": "TestUser407",
+  "id": "1963c39e-edfd-41ea-be90-75cc3a40e1b9",
+  "firstName": "any",
+  "lastName": "any",
+  "dependants": 1,
+  "salary": 0,
+  "gross": 0,
+  "benefitsCost": 57.69231,
+  "net": -57.69231
+}
+
+
+12:12:05.101 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 39: endpoint=put-employees-id
+12:12:05.106 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 99
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "firstName": "any",
+  "lastName": "any",
+  "dependants": 10000,
+  "id": "74b989c4-dd85-4a93-90e1-cb3701f3a271"
+}
+
+
+12:12:05.401 [main] DEBUG com.intuit.karate - response time in milliseconds: 294
+1 < 400
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 96
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:05 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee55-441c3a4a22fbf59a47499dd6;Parent=5bd4e8cd74712618;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: 2112d829-0824-4b10-b276-8efab86cb230
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMotYF9UoAMEIHQ=
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 344591a1b3de7e1e128c796fefc38088.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: xSfS62iRC8DjVZo1o_eKhv8Nfa1eJ1jUIPHf13oitB0KPiGSr6zjIw==
+[
+  {
+    "memberNames": [
+      "Dependants"
+    ],
+    "errorMessage": "The field Dependants must be between 0 and 32."
+  }
+]
+
+
+12:12:05.415 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 39: endpoint=put-employees-id
+12:12:05.419 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{
+  "firstName": "any",
+  "lastName": "any",
+  "dependants": -1,
+  "id": "74b989c4-dd85-4a93-90e1-cb3701f3a271"
+}
+
+
+12:12:05.647 [main] DEBUG com.intuit.karate - response time in milliseconds: 228
+1 < 400
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 96
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:05 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee55-2a56096a25b714e648a3aabc;Parent=2e0d2f454c753d8b;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: c8c9f9fb-a16f-46bc-935f-cb7e3e1a2ca6
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMotbGrcoAMEoBA=
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 c577ba8916969d30d0c51e46acfe11d4.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: FncB7XMZu0i0EPMhUEkq_cDQxXEiAGvxKdGF83z0kpI6B67-a7Gixg==
+[
+  {
+    "memberNames": [
+      "Dependants"
+    ],
+    "errorMessage": "The field Dependants must be between 0 and 32."
+  }
+]
+
+
+12:12:05.654 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:karate/endpoints/employees.feature - call by tag at line 8: endpoint=delete-employees-id
+12:12:05.658 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/74b989c4-dd85-4a93-90e1-cb3701f3a271
+1 > Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 > Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:12:05.921 [main] DEBUG com.intuit.karate - response time in milliseconds: 262
+1 < 200
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Thu, 08 Aug 2024 16:12:05 GMT
+1 < X-Amzn-Trace-Id: Root=1-66b4ee55-501e96df14b5b4613716d704;Parent=1cdfc98f60f12602;Sampled=0;lineage=da2a2ef2:0
+1 < x-amzn-RequestId: 112a444e-0b93-4a20-a20d-10c2a77fe8a3
+1 < Strict-Transport-Security: max-age=2592000
+1 < x-amz-apigw-id: cMotdFAhIAMEu_w=
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 344591a1b3de7e1e128c796fefc38088.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: ORD58-P5
+1 < X-Amz-Cf-Id: 9f5UxZbz1Hsk_2K5cBIuVBdluHNp9PCXQogpXE7uRMyaG4whpNUqzg==
+
+
+---------------------------------------------------------
+feature: classpath:karate/tests/put-employees.feature
+scenarios:  7 | passed:  7 | failed:  0 | time: 2.2226
+---------------------------------------------------------
+
+12:12:06.013 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 7 of 7 (0 remaining) classpath:karate/tests/put-employees.feature
+12:12:06.013 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+12:12:06.013 [main] INFO  com.intuit.karate - Current memory usage: 74 MB
+12:12:06.014 [main] INFO  com.intuit.karate - Tests have been finished. Total time: 10sec (10860 ms)
+Karate version: 1.4.0 | env: dev1
+======================================================
+elapsed:  11.19 | threads:    1 | thread time: 9.25 
+features:     5 | skipped:    2 | efficiency: 0.83
+scenarios:   28 | passed:    28 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.4.0 | env: dev1
+file:///Users/thanushanvaratharajah/Downloads/paylocity-employee-karate/target/karate-reports/karate-summary.html
+===================================================================
+
+12:12:06.147 [main] INFO  n.m.cucumber.ReportParser - File '/Users/thanushanvaratharajah/Downloads/paylocity-employee-karate/target/karate-reports/karate.tests.post-employees.json' contains 1 feature(s)
+12:12:06.149 [main] INFO  n.m.cucumber.ReportParser - File '/Users/thanushanvaratharajah/Downloads/paylocity-employee-karate/target/karate-reports/karate.tests.delete-employees-id.json' contains 1 feature(s)
+12:12:06.151 [main] INFO  n.m.cucumber.ReportParser - File '/Users/thanushanvaratharajah/Downloads/paylocity-employee-karate/target/karate-reports/karate.tests.get-employees-id.json' contains 1 feature(s)
+12:12:06.153 [main] INFO  n.m.cucumber.ReportParser - File '/Users/thanushanvaratharajah/Downloads/paylocity-employee-karate/target/karate-reports/karate.tests.put-employees.json' contains 1 feature(s)
+12:12:06.153 [main] INFO  n.m.cucumber.ReportParser - File '/Users/thanushanvaratharajah/Downloads/paylocity-employee-karate/target/karate-reports/karate.tests.get-employees.json' contains 1 feature(s)
+]]></system-out>
+  </testcase>
+</testsuite>
