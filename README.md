@@ -35,6 +35,8 @@ This is a Karate project for employee endpoints which exercises all CRUD operati
 3. **Give execute permission to the scripts** (if not already set):
    ```sh
    chmod +x run_all_tests.sh
+   chmod +x run_by_tag.sh
+   chmod +x run_feature.sh
    ```
 
 ## Running All Tests
@@ -51,4 +53,8 @@ To view the full report, open the `overview-features.html` file in a browser.
 
 For detailed logs, please refer to the `karate-log`.
 
-```
+## Viewing Sample Test Reports
+
+If you only want to see the test report, there is a sample `cucumber-html-reports` folder from previous test runs. Please download the `cucumber-html-reports` folder.
+
+Then, open the `overview-features.html` file in a browser to view the report.
