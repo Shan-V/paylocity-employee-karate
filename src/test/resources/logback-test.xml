@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Specific loggers with ERROR level to reduce noise -->
+    <logger name="org.thymeleaf" level="ERROR"/>
+    <logger name="com.jayway.jsonpath" level="ERROR"/>
+    <logger name="io.netty.util.internal" level="ERROR"/>
+    <logger name="org.apache.http.client" level="ERROR"/>
+
+    <!-- ConsoleAppender to output logs to the console -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- FileAppender to write logs to a file, overwriting existing logs on each application start -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>karate-log/karate.log</file>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+        <!-- Setting append to false to overwrite logs each time -->
+        <append>false</append>
+    </appender>
+
+    <!-- RollingFileAppender to handle log file rotation based on size -->
+    <appender name="ROLLING_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>karate-log/karate-rolling.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Rotate log file every day -->
+            <fileNamePattern>karate-log/karate-rolling.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- Keep 30 days worth of logs -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Setting a DEBUG level for com.intuit to get detailed logs -->
+    <logger name="com.intuit" level="DEBUG"/>
+
+    <!-- Root logger configuration -->
+    <root level="info">
+        <!-- Attach STDOUT, FILE, and ROLLING_FILE appenders to root logger -->
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="ROLLING_FILE"/>
+    </root>
+
+</configuration>

@@ -1,0 +1,5245 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: karate/tests/post-employees.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Karate Test Report</td>
+      <td>08 Aug 2024, 12:12</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">karate/tests/post-employees.feature</td>
+          <td      class="passed"    >123</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">123</td>
+
+          <td  class="passed"    >9</td>
+          <td >0</td>
+          <td class="total">9</td>
+
+          <td class="duration" data-value="6190862673">6.190</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_243556371.html">@tests=post-employees</a>
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">karate/tests/post-employees.feature</span>
+
+
+</div>
+
+        <div class="description indention">POST /employees</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_243556371.html">@tests=post-employees</a>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_3109081346.html">@test=post-employees</a>
+</div>
+
+
+  <span class="lead-duration duration">2.415</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">POST /employees</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># Create Employee</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedPostResponse = read(responseSchemas.postEmployees)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestBody = { firstName:&quot;Shawn&quot;,lastName:&quot;Rs&quot;,dependants: 2}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.postEmployees)</span>
+
+  <span class="lead-duration duration">0.227</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request karate.get('requestBody', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.221</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>12:12:00.147 request:
+1 &gt; POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 52
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;firstName&quot;: &quot;Shawn&quot;,
+  &quot;lastName&quot;: &quot;Rs&quot;,
+  &quot;dependants&quot;: 2
+}
+
+
+12:12:00.341 response time in milliseconds: 193
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 267
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:00 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee50-5538bb19281de0f15665e81c;Parent=17ab5b9bb9234d25;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: 5c55e07e-8351-4aa6-a0dc-adff79d6345b
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMosmEbHoAMERcQ=
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 c577ba8916969d30d0c51e46acfe11d4.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: Um4rqbvQFWJUuDsZKNbzOytnDMQiLkktW4ZBb9c8U1gRT7H3pOZC9Q==
+{
+  &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+  &quot;sortKey&quot;: &quot;31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0&quot;,
+  &quot;username&quot;: &quot;TestUser407&quot;,
+  &quot;id&quot;: &quot;31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0&quot;,
+  &quot;firstName&quot;: &quot;Shawn&quot;,
+  &quot;lastName&quot;: &quot;Rs&quot;,
+  &quot;dependants&quot;: 2,
+  &quot;salary&quot;: 52000,
+  &quot;gross&quot;: 2000,
+  &quot;benefitsCost&quot;: 76.92308,
+  &quot;net&quot;: 1923.0769
+}
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response == expectedPostResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def employeeId = response.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Retrieve Employee by Id</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedGetResponse = read(responseSchemas.getEmployees)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.getEmployeesId)</span>
+
+  <span class="lead-duration duration">0.221</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees', employeeId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestParams', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.214</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>12:12:00.350 request:
+1 &gt; GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:12:00.563 response time in milliseconds: 212
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 308
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:00 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee50-4c55399c7849035241e64d25;Parent=4a6fe622106f1852;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: 93dd42aa-5548-49ed-9501-cfb765aec7b3
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMosoFguIAMEiKg=
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 e5390f800690cfa4bd359d02b9b69064.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: wTqnWKOnbSEQ3beK2y-L6gD1TQgk-1bnfNwlk5TRrmRnWcKle2DAWg==
+{
+  &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+  &quot;sortKey&quot;: &quot;31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0&quot;,
+  &quot;username&quot;: &quot;TestUser407&quot;,
+  &quot;id&quot;: &quot;31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0&quot;,
+  &quot;firstName&quot;: &quot;Shawn&quot;,
+  &quot;lastName&quot;: &quot;Rs&quot;,
+  &quot;dependants&quot;: 2,
+  &quot;expiration&quot;: &quot;2024-09-08T16:12:00+00:00&quot;,
+  &quot;salary&quot;: 52000,
+  &quot;gross&quot;: 2000,
+  &quot;benefitsCost&quot;: 76.92308,
+  &quot;net&quot;: 1923.0769
+}
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response == expectedGetResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Retrieve all Employees &amp; make sure created employee is exist</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.getEmployees)</span>
+
+  <span class="lead-duration duration">0.280</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestParams', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.273</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>12:12:00.571 request:
+1 &gt; GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:12:00.843 response time in milliseconds: 269
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 11792
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:00 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee50-6045914f486ea13631019159;Parent=473538b455276d85;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: d12f93a9-844b-4866-82ba-e0f67dc552ea
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMosqFkyoAMEa5A=
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 cf64a4b926de5658989ce791a67893fa.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: L60ECS94cXx6IGX03REsk-rv7ij1yGm5oSjBg8ZzKDKfwB_6sAtRhQ==
+[
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;005d6886-28ef-4209-829e-ecc2af9e6168&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;005d6886-28ef-4209-829e-ecc2af9e6168&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T15:47:57+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;16234417-3e57-4b42-ab45-0adc81d1ef96&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;16234417-3e57-4b42-ab45-0adc81d1ef96&quot;,
+    &quot;firstName&quot;: &quot;Killy&quot;,
+    &quot;lastName&quot;: &quot;Williams&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T13:22:38+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;1af81a68-c473-48b0-bbfd-86768ef51388&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;1af81a68-c473-48b0-bbfd-86768ef51388&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T16:07:53+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;1e845edc-9d17-489f-b600-2b510bb94969&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;1e845edc-9d17-489f-b600-2b510bb94969&quot;,
+    &quot;firstName&quot;: &quot;Steve&quot;,
+    &quot;lastName&quot;: &quot;Rogers&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-07T23:48:03+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;2609a596-98bf-4e83-9d98-2579910a9a1c&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;2609a596-98bf-4e83-9d98-2579910a9a1c&quot;,
+    &quot;firstName&quot;: &quot;Lee&quot;,
+    &quot;lastName&quot;: &quot;Yiu&quot;,
+    &quot;dependants&quot;: 10,
+    &quot;expiration&quot;: &quot;2024-09-07T23:49:51+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 230.76926,
+    &quot;net&quot;: 1769.2307
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;2c95700a-4b63-405e-8fa9-6ad9d073068e&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;2c95700a-4b63-405e-8fa9-6ad9d073068e&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T15:59:08+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T16:12:00+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;34c9a98e-6371-4dc2-b964-ac5e6cce97b2&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;34c9a98e-6371-4dc2-b964-ac5e6cce97b2&quot;,
+    &quot;firstName&quot;: &quot;Killy&quot;,
+    &quot;lastName&quot;: &quot;Williams&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T13:22:37+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;375ceacc-b04c-4624-bbaa-7183dd5895ba&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;375ceacc-b04c-4624-bbaa-7183dd5895ba&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T03:56:44+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;3c96b0fa-bd34-4402-97a2-91906c74f351&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;3c96b0fa-bd34-4402-97a2-91906c74f351&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:58:12+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;41771a37-6175-426c-bd14-7ed44e412003&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;41771a37-6175-426c-bd14-7ed44e412003&quot;,
+    &quot;firstName&quot;: &quot;Shawn-updated&quot;,
+    &quot;lastName&quot;: &quot;Rs-updated&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T03:01:51+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;422f638a-d843-4a7e-9b54-884ee320ab8a&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;422f638a-d843-4a7e-9b54-884ee320ab8a&quot;,
+    &quot;firstName&quot;: &quot;any&quot;,
+    &quot;lastName&quot;: &quot;any&quot;,
+    &quot;dependants&quot;: 1,
+    &quot;expiration&quot;: &quot;2024-09-08T15:40:32+00:00&quot;,
+    &quot;salary&quot;: 0,
+    &quot;gross&quot;: 0,
+    &quot;benefitsCost&quot;: 57.69231,
+    &quot;net&quot;: -57.69231
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;44383831-2178-4c11-8a56-662f9072fc5a&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;44383831-2178-4c11-8a56-662f9072fc5a&quot;,
+    &quot;firstName&quot;: &quot;Lara&quot;,
+    &quot;lastName&quot;: &quot;Kim&quot;,
+    &quot;dependants&quot;: 20,
+    &quot;expiration&quot;: &quot;2024-09-07T23:50:39+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 423.07697,
+    &quot;net&quot;: 1576.9231
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;5eab4063-ad3e-4547-8a9b-30cdf4381d84&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;5eab4063-ad3e-4547-8a9b-30cdf4381d84&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:52:07+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;5faf2dc9-657c-4edd-b17e-d009c44d2d0d&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;5faf2dc9-657c-4edd-b17e-d009c44d2d0d&quot;,
+    &quot;firstName&quot;: &quot;James&quot;,
+    &quot;lastName&quot;: &quot;Wille&quot;,
+    &quot;dependants&quot;: 11,
+    &quot;expiration&quot;: &quot;2024-09-07T23:49:17+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 250,
+    &quot;net&quot;: 1750
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;62871850-a789-4cc8-9abb-eb0572a5c4ca&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;62871850-a789-4cc8-9abb-eb0572a5c4ca&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 1,
+    &quot;expiration&quot;: &quot;2024-09-08T03:56:45+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 57.69231,
+    &quot;net&quot;: 1942.3077
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;64e9ed09-b544-44bf-a5d3-a1f4f9eab931&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;64e9ed09-b544-44bf-a5d3-a1f4f9eab931&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 1,
+    &quot;expiration&quot;: &quot;2024-09-08T03:47:09+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 57.69231,
+    &quot;net&quot;: 1942.3077
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;6a5749ac-b765-4f56-be3e-a5b77aeafe26&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;6a5749ac-b765-4f56-be3e-a5b77aeafe26&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:36:03+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;6b0dedfb-5a82-48f5-b461-60e560914702&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;6b0dedfb-5a82-48f5-b461-60e560914702&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T16:07:09+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;6ce37678-df1f-4ee1-92c8-67116a144dd4&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;6ce37678-df1f-4ee1-92c8-67116a144dd4&quot;,
+    &quot;firstName&quot;: &quot;David&quot;,
+    &quot;lastName&quot;: &quot;Warr&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T00:00:28+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;73be35ea-d68f-4ead-9e17-35c2b64cb1fb&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;73be35ea-d68f-4ead-9e17-35c2b64cb1fb&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 1,
+    &quot;expiration&quot;: &quot;2024-09-08T03:40:11+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 57.69231,
+    &quot;net&quot;: 1942.3077
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;7a901dbf-e6c3-4f5f-bd23-a43ff9d951bf&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;7a901dbf-e6c3-4f5f-bd23-a43ff9d951bf&quot;,
+    &quot;firstName&quot;: &quot;any&quot;,
+    &quot;lastName&quot;: &quot;any&quot;,
+    &quot;dependants&quot;: 1,
+    &quot;expiration&quot;: &quot;2024-09-08T15:36:36+00:00&quot;,
+    &quot;salary&quot;: 0,
+    &quot;gross&quot;: 0,
+    &quot;benefitsCost&quot;: 57.69231,
+    &quot;net&quot;: -57.69231
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;801af182-3a5f-4508-aef5-320c7144c440&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;801af182-3a5f-4508-aef5-320c7144c440&quot;,
+    &quot;firstName&quot;: &quot;Killy&quot;,
+    &quot;lastName&quot;: &quot;Williams&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T13:22:38+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;91f87a7d-b21c-4147-bb29-dee66736f54f&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;91f87a7d-b21c-4147-bb29-dee66736f54f&quot;,
+    &quot;firstName&quot;: &quot;Killy&quot;,
+    &quot;lastName&quot;: &quot;Williams&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T13:22:38+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;981e6c89-a3d1-4720-870f-c7285e9f3fb6&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;981e6c89-a3d1-4720-870f-c7285e9f3fb6&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T03:40:10+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;99f6e75a-6624-49db-8dbe-18cb96a682ce&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;99f6e75a-6624-49db-8dbe-18cb96a682ce&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T16:08:42+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;a60de221-e162-4ac3-b910-437aa6ae7adf&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;a60de221-e162-4ac3-b910-437aa6ae7adf&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:51:40+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;b38bcb10-ffbe-4631-acf8-2501cc00aaab&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;b38bcb10-ffbe-4631-acf8-2501cc00aaab&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:58:41+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;b907771a-af90-46f1-b499-5c18a1759ec3&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;b907771a-af90-46f1-b499-5c18a1759ec3&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:56:14+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;bb0d33b7-5dbd-4216-922f-c367dbc622e1&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;bb0d33b7-5dbd-4216-922f-c367dbc622e1&quot;,
+    &quot;firstName&quot;: &quot;Killy&quot;,
+    &quot;lastName&quot;: &quot;Williams&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T13:22:39+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;bd0e55ea-cac7-4a5a-9d5a-9edcbeb700bc&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;bd0e55ea-cac7-4a5a-9d5a-9edcbeb700bc&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:50:56+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;c3587573-9cd6-4676-a41c-4dda01d54a82&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;c3587573-9cd6-4676-a41c-4dda01d54a82&quot;,
+    &quot;firstName&quot;: &quot;Kayle-update&quot;,
+    &quot;lastName&quot;: &quot;Lar&quot;,
+    &quot;dependants&quot;: 20,
+    &quot;expiration&quot;: &quot;2024-09-08T02:59:31+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 423.07697,
+    &quot;net&quot;: 1576.9231
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;c813f42e-3dea-4355-ab13-eb5ef6e4ab0e&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;c813f42e-3dea-4355-ab13-eb5ef6e4ab0e&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T03:47:11+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;d4cad2af-192e-4336-bc2e-d7524459c137&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;d4cad2af-192e-4336-bc2e-d7524459c137&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:37:49+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;d70863b3-9f7f-401f-957e-cb46ed20a419&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;d70863b3-9f7f-401f-957e-cb46ed20a419&quot;,
+    &quot;firstName&quot;: &quot;Killy&quot;,
+    &quot;lastName&quot;: &quot;Williams&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T13:22:38+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;df756aba-f24d-4bff-acb7-e119bc20e0ec&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;df756aba-f24d-4bff-acb7-e119bc20e0ec&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:48:43+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;f27618f9-6625-4ee0-873e-f3ff14a7e56b&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;f27618f9-6625-4ee0-873e-f3ff14a7e56b&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T03:35:59+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;f38584aa-8674-478e-8a61-20d1a6774d5a&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;f38584aa-8674-478e-8a61-20d1a6774d5a&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 1,
+    &quot;expiration&quot;: &quot;2024-09-08T15:47:57+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 57.69231,
+    &quot;net&quot;: 1942.3077
+  }
+]
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response  == &quot;#[] expectedGetResponse&quot;</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert response.find(x =&gt; x.id == employeeId) != null</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Update Employee</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestBody = { firstName:&quot;Shawn-updated&quot;,lastName:&quot;Rs-updated&quot;,dependants: 2, id: &quot;#(employeeId)&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.putEmployeesId)</span>
+
+  <span class="lead-duration duration">0.260</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request karate.get('requestBody', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">0.255</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>12:12:00.868 request:
+1 &gt; PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 112
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;firstName&quot;: &quot;Shawn-updated&quot;,
+  &quot;lastName&quot;: &quot;Rs-updated&quot;,
+  &quot;dependants&quot;: 2,
+  &quot;id&quot;: &quot;31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0&quot;
+}
+
+
+12:12:01.122 response time in milliseconds: 253
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 283
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:01 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee51-104449801d5c03ca58196044;Parent=0519168a70501795;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: 5310a71e-9dc3-474f-84c2-a2bcc9debd8f
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMostG7YoAMEt6Q=
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 9194c442b098b961aed83447bc467cb6.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: Xji-6ryfNJc4wTg3aV83U__pdCacd-1LDLbCDjl0VnU0wS64mgvBzA==
+{
+  &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+  &quot;sortKey&quot;: &quot;31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0&quot;,
+  &quot;username&quot;: &quot;TestUser407&quot;,
+  &quot;id&quot;: &quot;31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0&quot;,
+  &quot;firstName&quot;: &quot;Shawn-updated&quot;,
+  &quot;lastName&quot;: &quot;Rs-updated&quot;,
+  &quot;dependants&quot;: 2,
+  &quot;salary&quot;: 52000,
+  &quot;gross&quot;: 2000,
+  &quot;benefitsCost&quot;: 76.92308,
+  &quot;net&quot;: 1923.0769
+}
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response == expectedPostResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert response.firstName === 'Shawn-updated'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert response.lastName === 'Rs-updated'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Delete Employee</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.deleteEmployeesId)</span>
+
+  <span class="lead-duration duration">0.216</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod', 'api', 'employees', employeeId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method delete</span>
+
+  <span class="lead-duration duration">0.211</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>12:12:01.129 request:
+1 &gt; DELETE https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/31c3bc3d-ca44-4cb0-8e55-28ed0957e3d0
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:12:01.339 response time in milliseconds: 210
+1 &lt; 200
+1 &lt; Content-Length: 0
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:01 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee51-1388a19c128d0e1d056467f2;Parent=4ce23ec02017a041;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: d85c1791-3f32-4d85-a617-52153af87401
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMoswE1OoAMEInA=
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 e5390f800690cfa4bd359d02b9b69064.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: Z04Qje7pgyLNA8pH68LJbdqzeBdK_eXwWFGRU9udcAS0hisFgHHG7g==
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_243556371.html">@tests=post-employees</a>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_1433436780.html">@progress</a>
+       <a href="report-tag_960720756.html">@test=post-employees-errors</a>
+</div>
+
+
+  <span class="lead-duration duration">0.428</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">POST /Employees request body validation tests - POST request missing first name</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.postEmployees)</span>
+
+  <span class="lead-duration duration">0.216</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request karate.get('requestBody', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.211</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>12:12:01.354 request:
+1 &gt; POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 32
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;lastName&quot;: &quot;Rs&quot;,
+  &quot;dependants&quot;: 2
+}
+
+
+12:12:01.564 response time in milliseconds: 210
+1 &lt; 400
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 81
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:01 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee51-56152cb867b88c5f5de11e97;Parent=7585fb2012abd096;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: 9be11410-f7d7-4431-b0e9-1c379e0c20fc
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMosyF6WIAMEuEQ=
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 df8b3bc606f25025fcf4b59c26a0553e.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: iOBC_InJlnitX1cLstBhppr2IX58b5N5ihIUVxpoqtS5ztqCwnh5FQ==
+[
+  {
+    &quot;memberNames&quot;: [
+      &quot;FirstName&quot;
+    ],
+    &quot;errorMessage&quot;: &quot;The FirstName field is required.&quot;
+  }
+]
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_243556371.html">@tests=post-employees</a>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_1433436780.html">@progress</a>
+       <a href="report-tag_960720756.html">@test=post-employees-errors</a>
+</div>
+
+
+  <span class="lead-duration duration">0.548</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">POST /Employees request body validation tests - POST request missing both first name and last name</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.postEmployees)</span>
+
+  <span class="lead-duration duration">0.275</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request karate.get('requestBody', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.271</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>12:12:01.572 request:
+1 &gt; POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 16
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;dependants&quot;: 2
+}
+
+
+12:12:01.842 response time in milliseconds: 269
+1 &lt; 400
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 159
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:01 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee51-361a452a6b4b29b9070c27f8;Parent=27dda1be6fa0fcf4;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: 5f0d26dc-d2ce-44e8-b2c7-c18821779219
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMos0EqWIAMEtQQ=
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 e28a59cb1d70a8631f80067d8aed6838.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: R2fZ-0tgwDIx71j0IG-9HiWmJVUA1YRC2a8-0aDzwRCeN6Rj1GN9Rg==
+[
+  {
+    &quot;memberNames&quot;: [
+      &quot;FirstName&quot;
+    ],
+    &quot;errorMessage&quot;: &quot;The FirstName field is required.&quot;
+  },
+  {
+    &quot;memberNames&quot;: [
+      &quot;LastName&quot;
+    ],
+    &quot;errorMessage&quot;: &quot;The LastName field is required.&quot;
+  }
+]
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_243556371.html">@tests=post-employees</a>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_1433436780.html">@progress</a>
+       <a href="report-tag_960720756.html">@test=post-employees-errors</a>
+</div>
+
+
+  <span class="lead-duration duration">0.460</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">POST /Employees request body validation tests - POST request missing last name</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-14" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.postEmployees)</span>
+
+  <span class="lead-duration duration">0.232</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request karate.get('requestBody', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.225</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>12:12:01.855 request:
+1 &gt; POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 36
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;firstName&quot;: &quot;Shawn&quot;,
+  &quot;dependants&quot;: 2
+}
+
+
+12:12:02.079 response time in milliseconds: 223
+1 &lt; 400
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 79
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:02 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee52-1d58cfc4589b592d7807a75f;Parent=4ddec15548db5b9e;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: 4031c503-e56d-4a80-a827-3503bf3be756
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMos3G6xIAMEqyg=
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 6edb5951ff8ac41a5bd6a31d01902240.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: dzAR2gf3LY3ttKZ2FOUObtE-CvLQGJ8up5hILWaYKGNLgafKZEfWzQ==
+[
+  {
+    &quot;memberNames&quot;: [
+      &quot;LastName&quot;
+    ],
+    &quot;errorMessage&quot;: &quot;The LastName field is required.&quot;
+  }
+]
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_243556371.html">@tests=post-employees</a>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_1433436780.html">@progress</a>
+       <a href="report-tag_960720756.html">@test=post-employees-errors</a>
+</div>
+
+
+  <span class="lead-duration duration">0.479</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">POST /Employees request body validation tests - POST request missing dependants field</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.postEmployees)</span>
+
+  <span class="lead-duration duration">0.242</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request karate.get('requestBody', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.235</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>12:12:02.092 request:
+1 &gt; POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 37
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;firstName&quot;: &quot;Shawn&quot;,
+  &quot;lastName&quot;: &quot;Rs&quot;
+}
+
+
+12:12:02.326 response time in milliseconds: 232
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 267
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:02 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee52-1a4b13a848af3fee263cd118;Parent=184f4eaaa2dd5dfd;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: 35fd3c02-4026-41a9-af5f-6496710f021a
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMos5Fq8oAMEA2g=
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 f6f36f0a4bfc6440d567d2cc5ed4f414.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: IZcboSF8J0Xuy2axMyJJV0StTXCADFtbbl5F1bXDSCNK5EEwCMgOPg==
+{
+  &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+  &quot;sortKey&quot;: &quot;00aff950-df0a-41d1-809c-7a3914e1cd42&quot;,
+  &quot;username&quot;: &quot;TestUser407&quot;,
+  &quot;id&quot;: &quot;00aff950-df0a-41d1-809c-7a3914e1cd42&quot;,
+  &quot;firstName&quot;: &quot;Shawn&quot;,
+  &quot;lastName&quot;: &quot;Rs&quot;,
+  &quot;dependants&quot;: 0,
+  &quot;salary&quot;: 52000,
+  &quot;gross&quot;: 2000,
+  &quot;benefitsCost&quot;: 38.46154,
+  &quot;net&quot;: 1961.5385
+}
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_243556371.html">@tests=post-employees</a>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_1433436780.html">@progress</a>
+       <a href="report-tag_960720756.html">@test=post-employees-errors</a>
+</div>
+
+
+  <span class="lead-duration duration">0.415</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">POST /Employees request body validation tests - POST request with dependants field set to an unreasonably high number</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-20" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.postEmployees)</span>
+
+  <span class="lead-duration duration">0.209</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request karate.get('requestBody', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.203</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>12:12:02.339 request:
+1 &gt; POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 53
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;firstName&quot;: &quot;Shawn&quot;,
+  &quot;lastName&quot;: &quot;Rs&quot;,
+  &quot;dependants&quot;: 33
+}
+
+
+12:12:02.540 response time in milliseconds: 200
+1 &lt; 400
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 96
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:02 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee52-389f7317717fb9b83d72a824;Parent=0e49c24482668a18;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: 2cff4753-7a0b-4bfa-8df7-19e5a36a4efd
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMos8FgLoAMEd8A=
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 f6f36f0a4bfc6440d567d2cc5ed4f414.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: fVjgE8GfWaO65vu9o_vBdbXIkZSrLdChCDJIbN3OeE_TN4EIyhK3Rg==
+[
+  {
+    &quot;memberNames&quot;: [
+      &quot;Dependants&quot;
+    ],
+    &quot;errorMessage&quot;: &quot;The field Dependants must be between 0 and 32.&quot;
+  }
+]
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_243556371.html">@tests=post-employees</a>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_1433436780.html">@progress</a>
+       <a href="report-tag_960720756.html">@test=post-employees-errors</a>
+</div>
+
+
+  <span class="lead-duration duration">0.396</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">POST /Employees request body validation tests - POST request with dependants field set to a negative number</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-23" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-24" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.postEmployees)</span>
+
+  <span class="lead-duration duration">0.199</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request karate.get('requestBody', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.195</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>12:12:02.551 request:
+1 &gt; POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 53
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;firstName&quot;: &quot;Shawn&quot;,
+  &quot;lastName&quot;: &quot;Rs&quot;,
+  &quot;dependants&quot;: -1
+}
+
+
+12:12:02.745 response time in milliseconds: 193
+1 &lt; 400
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 96
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:02 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee52-70490f6b00d17f65296b14d8;Parent=0c03a90d92281f24;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: 77218564-43da-47e5-9e9e-f555305386a4
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMos-FyOoAMEKsw=
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 6a7b4b41112304057a352630e969f514.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: OLXyrjfEzjaUJoB00d5AMYhOy88JLFcwFT6IS4UL7XfvmHaeueJXlA==
+[
+  {
+    &quot;memberNames&quot;: [
+      &quot;Dependants&quot;
+    ],
+    &quot;errorMessage&quot;: &quot;The field Dependants must be between 0 and 32.&quot;
+  }
+]
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_243556371.html">@tests=post-employees</a>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_1433436780.html">@progress</a>
+       <a href="report-tag_960720756.html">@test=post-employees-errors</a>
+</div>
+
+
+  <span class="lead-duration duration">0.591</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">POST /Employees request body validation tests - POST request with dependants field set to an extremely large number</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-26" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.postEmployees)</span>
+
+  <span class="lead-duration duration">0.297</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request karate.get('requestBody', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.292</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>12:12:02.754 request:
+1 &gt; POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 61
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;firstName&quot;: &quot;Shawn&quot;,
+  &quot;lastName&quot;: &quot;Rs&quot;,
+  &quot;dependants&quot;: 1000000000
+}
+
+
+12:12:03.045 response time in milliseconds: 290
+1 &lt; 405
+1 &lt; Content-Length: 0
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:03 GMT
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-RequestId: c5357152-375a-4541-ab36-b10d25d2b696
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; Allow: GET
+1 &lt; x-amz-apigw-id: cMotAEuEoAMEIVg=
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: -1
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee52-3cc5d9fc7fe2f53c4903b6fb;Parent=499091920b9d6d48;Sampled=0;lineage=da2a2ef2:0
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 139066808b80781047032e03c4f8e672.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: 8AND6LtdR_BMWApjmri1loaplN0gWwbofy89_t_s_Y1BM7w5vvg6Xg==
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_243556371.html">@tests=post-employees</a>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_1433436780.html">@progress</a>
+       <a href="report-tag_960720756.html">@test=post-employees-errors</a>
+</div>
+
+
+  <span class="lead-duration duration">0.455</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">POST /Employees request body validation tests - POST request with an empty body</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-29" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-30">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-30" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.postEmployees)</span>
+
+  <span class="lead-duration duration">0.229</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request karate.get('requestBody', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.223</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>12:12:03.058 request:
+1 &gt; POST https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 2
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+}
+
+
+12:12:03.280 response time in milliseconds: 222
+1 &lt; 400
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 159
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:03 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee53-237d27730fa96cfe28da9a79;Parent=22917f1912e97927;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: 3b493604-888f-40b1-8c0b-234eb8d00433
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMotDFvToAMEFog=
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 533a5d9af0ba89d040a59600c6a91ff4.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: RBRMHdbgEpuDG_2ncOdrijcyDkaYWxiZVHLudHeZFbrXuD24_yOkfg==
+[
+  {
+    &quot;memberNames&quot;: [
+      &quot;FirstName&quot;
+    ],
+    &quot;errorMessage&quot;: &quot;The FirstName field is required.&quot;
+  },
+  {
+    &quot;memberNames&quot;: [
+      &quot;LastName&quot;
+    ],
+    &quot;errorMessage&quot;: &quot;The LastName field is required.&quot;
+  }
+]
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

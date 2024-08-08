@@ -1,0 +1,27 @@
+[
+  {
+    "scenarioDescription": "GET request with employee ID as a numeric string instead of a UUID",
+    "employeeId": "12345",
+    "expectedStatus": 500
+  },
+  {
+    "scenarioDescription": "GET request with employee ID as a non-numeric string instead of a UUID",
+    "employeeId": "foo",
+    "expectedStatus": 500
+  },
+  {
+    "scenarioDescription": "GET request with employee ID as a number instead of a UUID",
+    "employeeId": 1234,
+    "expectedStatus": 500
+  },
+  {
+    "scenarioDescription": "GET request with employee ID as an invalid UUID",
+    "employeeId": "375ceaca-b04c-4624-bbaa-7183dd5895bb",
+    "expectedStatus": 200
+  },
+  {
+    "scenarioDescription": "GET request with employee ID that looks like a UUID but is not",
+    "employeeId": "375ceaca-b04c-4624-bbxx-7183dd5895xx",
+    "expectedStatus": 500
+  }
+]

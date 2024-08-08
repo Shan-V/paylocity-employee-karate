@@ -1,0 +1,2064 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @test=get-employees-id</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Karate Test Report</td>
+      <td>08 Aug 2024, 12:12</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@test=get-employees-id</td>
+          <td      class="passed"    >40</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">40</td>
+
+          <td  class="passed"    >5</td>
+          <td >0</td>
+          <td class="total">5</td>
+
+          <td class="duration" data-value="3405437540">3.405</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_2814175400.html">karate/tests/get-employees-id.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_3524484085.html">@tests=get-employees-id</a>
+       <a href="report-tag_4219948324.html">@test=get-employees-id</a>
+</div>
+
+
+  <span class="lead-duration duration">1.311</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">GET /employees/{id} - GET request with employee ID as a numeric string instead of a UUID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.getEmployeesId)</span>
+
+  <span class="lead-duration duration">0.657</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees', employeeId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestParams', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.651</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>12:11:57.888 request:
+1 &gt; GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/12345
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:11:58.538 response time in milliseconds: 648
+1 &lt; 500
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Content-Length: 3612
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:11:58 GMT
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-RequestId: 43140787-35f0-4ef1-8ddb-a34439a1545d
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMosPE2oIAMEZxQ=
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: -1
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee4e-6bdee7a575c2cec353e2decc;Parent=4233e87a02cee0a1;Sampled=0;lineage=da2a2ef2:0
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 e5390f800690cfa4bd359d02b9b69064.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: 54D4hvt9ACwYD2c53G-zT3UF-fA-HnaCySKK-jqq2yYBYDfSba4Lhg==
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;title&gt;Error - Paylocity Benefits Dashboard&lt;/title&gt;
+
+  
+  
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&quot; /&gt;
+&lt;meta name=&quot;x-stylesheet-fallback-test&quot; content=&quot;&quot; class=&quot;sr-only&quot; /&gt;&lt;script&gt;!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName(&quot;SCRIPT&quot;),h=g[g.length-1].previousElementSibling,i=f.defaultView&amp;&amp;f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&amp;&amp;i[a]!==b)for(e=0;e&lt;c.length;e++)f.write('&lt;link href=&quot;'+c[e]+'&quot; '+d+&quot;/&gt;&quot;)}(&quot;position&quot;,&quot;absolute&quot;,[&quot;/Prod/lib/bootstrap/dist/css/bootstrap.min.css&quot;], &quot;rel=\u0022stylesheet\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-ggOyR0iXCbMQv3Xipma34MD\u002BdH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\u0022 &quot;);&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css&quot; /&gt;
+  
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;/Prod/css/site.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;nav class=&quot;navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom mb-3&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;/Prod/Benefits&quot;&gt;Paylocity Benefits Dashboard&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;main role=&quot;main&quot; class=&quot;pb-3&quot;&gt;
+      
+
+&lt;h1 class=&quot;text-danger&quot;&gt;Error.&lt;/h1&gt;
+&lt;h2 class=&quot;text-danger&quot;&gt;An error occurred while processing your request.&lt;/h2&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Request ID:&lt;/strong&gt; &lt;code&gt;0HN5NOJA3G0KE&lt;/code&gt;
+  &lt;/p&gt;
+
+&lt;h3&gt;Development Mode&lt;/h3&gt;
+
+&lt;p&gt;
+  Swapping to &lt;strong&gt;Development&lt;/strong&gt; environment will display more detailed information about the error that occurred.
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;The Development environment shouldn't be enabled for deployed applications.&lt;/strong&gt;
+  It can result in displaying sensitive information from exceptions to end users.
+  For local debugging, enable the &lt;strong&gt;Development&lt;/strong&gt; environment by setting the &lt;strong&gt;ASPNETCORE_ENVIRONMENT&lt;/strong&gt; environment variable to &lt;strong&gt;Development&lt;/strong&gt;
+  and restarting the app.
+&lt;/p&gt;
+
+    &lt;/main&gt;
+  &lt;/div&gt;
+
+  &lt;footer class=&quot;border-top footer text-muted&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &amp;copy; 2024 - Paylocity
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+  
+  
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/jquery/dist/jquery.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery &amp;&amp; window.jQuery.fn &amp;&amp; window.jQuery.fn.modal||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/bootstrap/dist/js/bootstrap.bundle.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-xrRywqdh3PHs8keKZN\u002B8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+  
+  &lt;script src=&quot;/Prod/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0&quot;&gt;&lt;/script&gt;
+
+  
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_2814175400.html">karate/tests/get-employees-id.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_3524484085.html">@tests=get-employees-id</a>
+       <a href="report-tag_4219948324.html">@test=get-employees-id</a>
+</div>
+
+
+  <span class="lead-duration duration">0.488</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">GET /employees/{id} - GET request with employee ID as a non-numeric string instead of a UUID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.getEmployeesId)</span>
+
+  <span class="lead-duration duration">0.246</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees', employeeId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestParams', {})</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.237</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>12:11:58.554 request:
+1 &gt; GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/foo
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:11:58.790 response time in milliseconds: 235
+1 &lt; 500
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Content-Length: 3612
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:11:58 GMT
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-RequestId: 958bd780-e0a6-4bb5-a909-dbe0f2548291
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMosWEcjoAMEOcQ=
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: -1
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee4e-09574ee50e588f9d298209b5;Parent=734a93990fde154c;Sampled=0;lineage=da2a2ef2:0
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 f154cde4181f98fadc712cec9f8ab060.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: vTu92g44bWZq-AclQ4YuvVGz3Wmu1g89qEeKaf0rE058RHdXxqxw0Q==
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;title&gt;Error - Paylocity Benefits Dashboard&lt;/title&gt;
+
+  
+  
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&quot; /&gt;
+&lt;meta name=&quot;x-stylesheet-fallback-test&quot; content=&quot;&quot; class=&quot;sr-only&quot; /&gt;&lt;script&gt;!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName(&quot;SCRIPT&quot;),h=g[g.length-1].previousElementSibling,i=f.defaultView&amp;&amp;f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&amp;&amp;i[a]!==b)for(e=0;e&lt;c.length;e++)f.write('&lt;link href=&quot;'+c[e]+'&quot; '+d+&quot;/&gt;&quot;)}(&quot;position&quot;,&quot;absolute&quot;,[&quot;/Prod/lib/bootstrap/dist/css/bootstrap.min.css&quot;], &quot;rel=\u0022stylesheet\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-ggOyR0iXCbMQv3Xipma34MD\u002BdH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\u0022 &quot;);&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css&quot; /&gt;
+  
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;/Prod/css/site.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;nav class=&quot;navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom mb-3&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;/Prod/Benefits&quot;&gt;Paylocity Benefits Dashboard&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;main role=&quot;main&quot; class=&quot;pb-3&quot;&gt;
+      
+
+&lt;h1 class=&quot;text-danger&quot;&gt;Error.&lt;/h1&gt;
+&lt;h2 class=&quot;text-danger&quot;&gt;An error occurred while processing your request.&lt;/h2&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Request ID:&lt;/strong&gt; &lt;code&gt;0HN5NOJA3G0KF&lt;/code&gt;
+  &lt;/p&gt;
+
+&lt;h3&gt;Development Mode&lt;/h3&gt;
+
+&lt;p&gt;
+  Swapping to &lt;strong&gt;Development&lt;/strong&gt; environment will display more detailed information about the error that occurred.
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;The Development environment shouldn't be enabled for deployed applications.&lt;/strong&gt;
+  It can result in displaying sensitive information from exceptions to end users.
+  For local debugging, enable the &lt;strong&gt;Development&lt;/strong&gt; environment by setting the &lt;strong&gt;ASPNETCORE_ENVIRONMENT&lt;/strong&gt; environment variable to &lt;strong&gt;Development&lt;/strong&gt;
+  and restarting the app.
+&lt;/p&gt;
+
+    &lt;/main&gt;
+  &lt;/div&gt;
+
+  &lt;footer class=&quot;border-top footer text-muted&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &amp;copy; 2024 - Paylocity
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+  
+  
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/jquery/dist/jquery.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery &amp;&amp; window.jQuery.fn &amp;&amp; window.jQuery.fn.modal||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/bootstrap/dist/js/bootstrap.bundle.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-xrRywqdh3PHs8keKZN\u002B8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+  
+  &lt;script src=&quot;/Prod/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0&quot;&gt;&lt;/script&gt;
+
+  
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_2814175400.html">karate/tests/get-employees-id.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_3524484085.html">@tests=get-employees-id</a>
+       <a href="report-tag_4219948324.html">@test=get-employees-id</a>
+</div>
+
+
+  <span class="lead-duration duration">0.495</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">GET /employees/{id} - GET request with employee ID as a number instead of a UUID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.getEmployeesId)</span>
+
+  <span class="lead-duration duration">0.249</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees', employeeId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestParams', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.243</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>12:11:58.801 request:
+1 &gt; GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/1234
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:11:59.044 response time in milliseconds: 241
+1 &lt; 500
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Content-Length: 3612
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:11:59 GMT
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-RequestId: c149d796-256d-425a-8e26-c4e045315e8b
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMosYGR1IAMEndg=
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: -1
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee4e-762439e8455f752976f8bc12;Parent=75f699686d3f5bd9;Sampled=0;lineage=da2a2ef2:0
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 f6f36f0a4bfc6440d567d2cc5ed4f414.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: c7JUBzbvs-9r1n6AMRdfH8swwKdj_XUhf-2tl-Qw8PNsakj9yL-2hw==
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;title&gt;Error - Paylocity Benefits Dashboard&lt;/title&gt;
+
+  
+  
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&quot; /&gt;
+&lt;meta name=&quot;x-stylesheet-fallback-test&quot; content=&quot;&quot; class=&quot;sr-only&quot; /&gt;&lt;script&gt;!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName(&quot;SCRIPT&quot;),h=g[g.length-1].previousElementSibling,i=f.defaultView&amp;&amp;f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&amp;&amp;i[a]!==b)for(e=0;e&lt;c.length;e++)f.write('&lt;link href=&quot;'+c[e]+'&quot; '+d+&quot;/&gt;&quot;)}(&quot;position&quot;,&quot;absolute&quot;,[&quot;/Prod/lib/bootstrap/dist/css/bootstrap.min.css&quot;], &quot;rel=\u0022stylesheet\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-ggOyR0iXCbMQv3Xipma34MD\u002BdH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\u0022 &quot;);&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css&quot; /&gt;
+  
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;/Prod/css/site.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;nav class=&quot;navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom mb-3&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;/Prod/Benefits&quot;&gt;Paylocity Benefits Dashboard&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;main role=&quot;main&quot; class=&quot;pb-3&quot;&gt;
+      
+
+&lt;h1 class=&quot;text-danger&quot;&gt;Error.&lt;/h1&gt;
+&lt;h2 class=&quot;text-danger&quot;&gt;An error occurred while processing your request.&lt;/h2&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Request ID:&lt;/strong&gt; &lt;code&gt;0HN5NOJA3G0KG&lt;/code&gt;
+  &lt;/p&gt;
+
+&lt;h3&gt;Development Mode&lt;/h3&gt;
+
+&lt;p&gt;
+  Swapping to &lt;strong&gt;Development&lt;/strong&gt; environment will display more detailed information about the error that occurred.
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;The Development environment shouldn't be enabled for deployed applications.&lt;/strong&gt;
+  It can result in displaying sensitive information from exceptions to end users.
+  For local debugging, enable the &lt;strong&gt;Development&lt;/strong&gt; environment by setting the &lt;strong&gt;ASPNETCORE_ENVIRONMENT&lt;/strong&gt; environment variable to &lt;strong&gt;Development&lt;/strong&gt;
+  and restarting the app.
+&lt;/p&gt;
+
+    &lt;/main&gt;
+  &lt;/div&gt;
+
+  &lt;footer class=&quot;border-top footer text-muted&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &amp;copy; 2024 - Paylocity
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+  
+  
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/jquery/dist/jquery.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery &amp;&amp; window.jQuery.fn &amp;&amp; window.jQuery.fn.modal||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/bootstrap/dist/js/bootstrap.bundle.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-xrRywqdh3PHs8keKZN\u002B8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+  
+  &lt;script src=&quot;/Prod/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0&quot;&gt;&lt;/script&gt;
+
+  
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_2814175400.html">karate/tests/get-employees-id.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_3524484085.html">@tests=get-employees-id</a>
+       <a href="report-tag_4219948324.html">@test=get-employees-id</a>
+</div>
+
+
+  <span class="lead-duration duration">0.678</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">GET /employees/{id} - GET request with employee ID as an invalid UUID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.getEmployeesId)</span>
+
+  <span class="lead-duration duration">0.341</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees', employeeId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestParams', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.334</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>12:11:59.054 request:
+1 &gt; GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/375ceaca-b04c-4624-bbaa-7183dd5895bb
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:11:59.387 response time in milliseconds: 329
+1 &lt; 200
+1 &lt; Content-Length: 0
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:11:59 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee4f-2a3642450b0e3b9c50d2b2b2;Parent=79f023125f7a7505;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: e790c7df-71ad-4dcd-ba10-b6253e56de19
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMosbHXrIAMEISA=
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 b97ae744144c7c472752110c480bad34.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: tnVX8YQS7PW_ABzShAqDkqaGoSqoYoAgqhsNfeFPmdzfhkFjwiMbKA==
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_2814175400.html">karate/tests/get-employees-id.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_3524484085.html">@tests=get-employees-id</a>
+       <a href="report-tag_4219948324.html">@test=get-employees-id</a>
+</div>
+
+
+  <span class="lead-duration duration">0.432</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">GET /employees/{id} - GET request with employee ID that looks like a UUID but is not</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.getEmployeesId)</span>
+
+  <span class="lead-duration duration">0.218</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees', employeeId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestParams', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.211</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>12:11:59.402 request:
+1 &gt; GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/375ceaca-b04c-4624-bbxx-7183dd5895xx
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:11:59.612 response time in milliseconds: 209
+1 &lt; 500
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Content-Length: 3612
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:11:59 GMT
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-RequestId: 762cbcd8-bb8e-4231-9e56-b0a8df026907
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMoseHCCIAMEByg=
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: -1
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee4f-10b7bc557f859a083e552aac;Parent=0c2e780b5a87caea;Sampled=0;lineage=da2a2ef2:0
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 f154cde4181f98fadc712cec9f8ab060.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: bSPNwTiJhdXAY2z-EEvKEr9f9JFCJlbtRaxazXkgOh7BHyJZDS2I2Q==
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;title&gt;Error - Paylocity Benefits Dashboard&lt;/title&gt;
+
+  
+  
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&quot; /&gt;
+&lt;meta name=&quot;x-stylesheet-fallback-test&quot; content=&quot;&quot; class=&quot;sr-only&quot; /&gt;&lt;script&gt;!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName(&quot;SCRIPT&quot;),h=g[g.length-1].previousElementSibling,i=f.defaultView&amp;&amp;f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&amp;&amp;i[a]!==b)for(e=0;e&lt;c.length;e++)f.write('&lt;link href=&quot;'+c[e]+'&quot; '+d+&quot;/&gt;&quot;)}(&quot;position&quot;,&quot;absolute&quot;,[&quot;/Prod/lib/bootstrap/dist/css/bootstrap.min.css&quot;], &quot;rel=\u0022stylesheet\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-ggOyR0iXCbMQv3Xipma34MD\u002BdH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\u0022 &quot;);&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css&quot; /&gt;
+  
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;/Prod/css/site.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;nav class=&quot;navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom mb-3&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;/Prod/Benefits&quot;&gt;Paylocity Benefits Dashboard&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;main role=&quot;main&quot; class=&quot;pb-3&quot;&gt;
+      
+
+&lt;h1 class=&quot;text-danger&quot;&gt;Error.&lt;/h1&gt;
+&lt;h2 class=&quot;text-danger&quot;&gt;An error occurred while processing your request.&lt;/h2&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Request ID:&lt;/strong&gt; &lt;code&gt;0HN5NOJA3G0KH&lt;/code&gt;
+  &lt;/p&gt;
+
+&lt;h3&gt;Development Mode&lt;/h3&gt;
+
+&lt;p&gt;
+  Swapping to &lt;strong&gt;Development&lt;/strong&gt; environment will display more detailed information about the error that occurred.
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;The Development environment shouldn't be enabled for deployed applications.&lt;/strong&gt;
+  It can result in displaying sensitive information from exceptions to end users.
+  For local debugging, enable the &lt;strong&gt;Development&lt;/strong&gt; environment by setting the &lt;strong&gt;ASPNETCORE_ENVIRONMENT&lt;/strong&gt; environment variable to &lt;strong&gt;Development&lt;/strong&gt;
+  and restarting the app.
+&lt;/p&gt;
+
+    &lt;/main&gt;
+  &lt;/div&gt;
+
+  &lt;footer class=&quot;border-top footer text-muted&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &amp;copy; 2024 - Paylocity
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+  
+  
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/jquery/dist/jquery.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js&quot; crossorigin=&quot;anonymous&quot; integrity=&quot;sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o&quot;&gt;
+    &lt;/script&gt;
+&lt;script&gt;(window.jQuery &amp;&amp; window.jQuery.fn &amp;&amp; window.jQuery.fn.modal||document.write(&quot;\u003Cscript src=\u0022/Prod/lib/bootstrap/dist/js/bootstrap.bundle.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-xrRywqdh3PHs8keKZN\u002B8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o\u0022\u003E\u003C/script\u003E&quot;));&lt;/script&gt;
+  
+  &lt;script src=&quot;/Prod/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0&quot;&gt;&lt;/script&gt;
+
+  
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

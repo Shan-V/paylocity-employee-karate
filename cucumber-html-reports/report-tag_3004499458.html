@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @test=get-employees</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Karate Test Report</td>
+      <td>08 Aug 2024, 12:12</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@test=get-employees</td>
+          <td      class="passed"    >10</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">10</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="789916210">0.789</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_4_1296902670.html">karate/tests/get-employees.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_255145096.html">@tests=employees</a>
+       <a href="report-tag_3466252497.html">@tests=get-employees</a>
+       <a href="report-tag_3004499458.html">@test=get-employees</a>
+</div>
+
+
+  <span class="lead-duration duration">0.789</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">GET /employees</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedResponse = read(responseSchemas.getEmployees)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(endpoints.getEmployees)</span>
+
+  <span class="lead-duration duration">0.391</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">karate/endpoints/employees.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'Prod','api', 'employees'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestHeaders', defaultAuth)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers karate.get('requestParams', {})</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.386</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>12:11:59.690 request:
+1 &gt; GET https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+1 &gt; Authorization: Basic VGVzdFVzZXI0MDc6ayo+I14wT30kNSp4
+1 &gt; Host: wmxrwq14uc.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:12:00.075 response time in milliseconds: 380
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 11483
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 08 Aug 2024 16:12:00 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-66b4ee4f-61b6fa4c145ae9195be8a11f;Parent=70b2641e9c027713;Sampled=0;lineage=da2a2ef2:0
+1 &lt; x-amzn-RequestId: 12708561-096d-49cc-bf23-b190737c49df
+1 &lt; Strict-Transport-Security: max-age=2592000
+1 &lt; x-amz-apigw-id: cMoshF-VIAMEamw=
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 6edb5951ff8ac41a5bd6a31d01902240.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P5
+1 &lt; X-Amz-Cf-Id: CY5LOBRFtg3Pis-vW2UI1UeIORX3Ri1EJLnRSoPh_0QUODOto9yHXQ==
+[
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;005d6886-28ef-4209-829e-ecc2af9e6168&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;005d6886-28ef-4209-829e-ecc2af9e6168&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T15:47:57+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;16234417-3e57-4b42-ab45-0adc81d1ef96&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;16234417-3e57-4b42-ab45-0adc81d1ef96&quot;,
+    &quot;firstName&quot;: &quot;Killy&quot;,
+    &quot;lastName&quot;: &quot;Williams&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T13:22:38+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;1af81a68-c473-48b0-bbfd-86768ef51388&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;1af81a68-c473-48b0-bbfd-86768ef51388&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T16:07:53+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;1e845edc-9d17-489f-b600-2b510bb94969&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;1e845edc-9d17-489f-b600-2b510bb94969&quot;,
+    &quot;firstName&quot;: &quot;Steve&quot;,
+    &quot;lastName&quot;: &quot;Rogers&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-07T23:48:03+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;2609a596-98bf-4e83-9d98-2579910a9a1c&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;2609a596-98bf-4e83-9d98-2579910a9a1c&quot;,
+    &quot;firstName&quot;: &quot;Lee&quot;,
+    &quot;lastName&quot;: &quot;Yiu&quot;,
+    &quot;dependants&quot;: 10,
+    &quot;expiration&quot;: &quot;2024-09-07T23:49:51+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 230.76926,
+    &quot;net&quot;: 1769.2307
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;2c95700a-4b63-405e-8fa9-6ad9d073068e&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;2c95700a-4b63-405e-8fa9-6ad9d073068e&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T15:59:08+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;34c9a98e-6371-4dc2-b964-ac5e6cce97b2&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;34c9a98e-6371-4dc2-b964-ac5e6cce97b2&quot;,
+    &quot;firstName&quot;: &quot;Killy&quot;,
+    &quot;lastName&quot;: &quot;Williams&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T13:22:37+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;375ceacc-b04c-4624-bbaa-7183dd5895ba&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;375ceacc-b04c-4624-bbaa-7183dd5895ba&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T03:56:44+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;3c96b0fa-bd34-4402-97a2-91906c74f351&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;3c96b0fa-bd34-4402-97a2-91906c74f351&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:58:12+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;41771a37-6175-426c-bd14-7ed44e412003&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;41771a37-6175-426c-bd14-7ed44e412003&quot;,
+    &quot;firstName&quot;: &quot;Shawn-updated&quot;,
+    &quot;lastName&quot;: &quot;Rs-updated&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T03:01:51+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;422f638a-d843-4a7e-9b54-884ee320ab8a&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;422f638a-d843-4a7e-9b54-884ee320ab8a&quot;,
+    &quot;firstName&quot;: &quot;any&quot;,
+    &quot;lastName&quot;: &quot;any&quot;,
+    &quot;dependants&quot;: 1,
+    &quot;expiration&quot;: &quot;2024-09-08T15:40:32+00:00&quot;,
+    &quot;salary&quot;: 0,
+    &quot;gross&quot;: 0,
+    &quot;benefitsCost&quot;: 57.69231,
+    &quot;net&quot;: -57.69231
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;44383831-2178-4c11-8a56-662f9072fc5a&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;44383831-2178-4c11-8a56-662f9072fc5a&quot;,
+    &quot;firstName&quot;: &quot;Lara&quot;,
+    &quot;lastName&quot;: &quot;Kim&quot;,
+    &quot;dependants&quot;: 20,
+    &quot;expiration&quot;: &quot;2024-09-07T23:50:39+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 423.07697,
+    &quot;net&quot;: 1576.9231
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;5eab4063-ad3e-4547-8a9b-30cdf4381d84&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;5eab4063-ad3e-4547-8a9b-30cdf4381d84&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:52:07+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;5faf2dc9-657c-4edd-b17e-d009c44d2d0d&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;5faf2dc9-657c-4edd-b17e-d009c44d2d0d&quot;,
+    &quot;firstName&quot;: &quot;James&quot;,
+    &quot;lastName&quot;: &quot;Wille&quot;,
+    &quot;dependants&quot;: 11,
+    &quot;expiration&quot;: &quot;2024-09-07T23:49:17+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 250,
+    &quot;net&quot;: 1750
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;62871850-a789-4cc8-9abb-eb0572a5c4ca&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;62871850-a789-4cc8-9abb-eb0572a5c4ca&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 1,
+    &quot;expiration&quot;: &quot;2024-09-08T03:56:45+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 57.69231,
+    &quot;net&quot;: 1942.3077
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;64e9ed09-b544-44bf-a5d3-a1f4f9eab931&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;64e9ed09-b544-44bf-a5d3-a1f4f9eab931&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 1,
+    &quot;expiration&quot;: &quot;2024-09-08T03:47:09+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 57.69231,
+    &quot;net&quot;: 1942.3077
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;6a5749ac-b765-4f56-be3e-a5b77aeafe26&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;6a5749ac-b765-4f56-be3e-a5b77aeafe26&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:36:03+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;6b0dedfb-5a82-48f5-b461-60e560914702&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;6b0dedfb-5a82-48f5-b461-60e560914702&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T16:07:09+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;6ce37678-df1f-4ee1-92c8-67116a144dd4&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;6ce37678-df1f-4ee1-92c8-67116a144dd4&quot;,
+    &quot;firstName&quot;: &quot;David&quot;,
+    &quot;lastName&quot;: &quot;Warr&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T00:00:28+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;73be35ea-d68f-4ead-9e17-35c2b64cb1fb&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;73be35ea-d68f-4ead-9e17-35c2b64cb1fb&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 1,
+    &quot;expiration&quot;: &quot;2024-09-08T03:40:11+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 57.69231,
+    &quot;net&quot;: 1942.3077
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;7a901dbf-e6c3-4f5f-bd23-a43ff9d951bf&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;7a901dbf-e6c3-4f5f-bd23-a43ff9d951bf&quot;,
+    &quot;firstName&quot;: &quot;any&quot;,
+    &quot;lastName&quot;: &quot;any&quot;,
+    &quot;dependants&quot;: 1,
+    &quot;expiration&quot;: &quot;2024-09-08T15:36:36+00:00&quot;,
+    &quot;salary&quot;: 0,
+    &quot;gross&quot;: 0,
+    &quot;benefitsCost&quot;: 57.69231,
+    &quot;net&quot;: -57.69231
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;801af182-3a5f-4508-aef5-320c7144c440&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;801af182-3a5f-4508-aef5-320c7144c440&quot;,
+    &quot;firstName&quot;: &quot;Killy&quot;,
+    &quot;lastName&quot;: &quot;Williams&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T13:22:38+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;91f87a7d-b21c-4147-bb29-dee66736f54f&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;91f87a7d-b21c-4147-bb29-dee66736f54f&quot;,
+    &quot;firstName&quot;: &quot;Killy&quot;,
+    &quot;lastName&quot;: &quot;Williams&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T13:22:38+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;981e6c89-a3d1-4720-870f-c7285e9f3fb6&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;981e6c89-a3d1-4720-870f-c7285e9f3fb6&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T03:40:10+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;99f6e75a-6624-49db-8dbe-18cb96a682ce&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;99f6e75a-6624-49db-8dbe-18cb96a682ce&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T16:08:42+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;a60de221-e162-4ac3-b910-437aa6ae7adf&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;a60de221-e162-4ac3-b910-437aa6ae7adf&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:51:40+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;b38bcb10-ffbe-4631-acf8-2501cc00aaab&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;b38bcb10-ffbe-4631-acf8-2501cc00aaab&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:58:41+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;b907771a-af90-46f1-b499-5c18a1759ec3&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;b907771a-af90-46f1-b499-5c18a1759ec3&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:56:14+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;bb0d33b7-5dbd-4216-922f-c367dbc622e1&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;bb0d33b7-5dbd-4216-922f-c367dbc622e1&quot;,
+    &quot;firstName&quot;: &quot;Killy&quot;,
+    &quot;lastName&quot;: &quot;Williams&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T13:22:39+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;bd0e55ea-cac7-4a5a-9d5a-9edcbeb700bc&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;bd0e55ea-cac7-4a5a-9d5a-9edcbeb700bc&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:50:56+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;c3587573-9cd6-4676-a41c-4dda01d54a82&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;c3587573-9cd6-4676-a41c-4dda01d54a82&quot;,
+    &quot;firstName&quot;: &quot;Kayle-update&quot;,
+    &quot;lastName&quot;: &quot;Lar&quot;,
+    &quot;dependants&quot;: 20,
+    &quot;expiration&quot;: &quot;2024-09-08T02:59:31+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 423.07697,
+    &quot;net&quot;: 1576.9231
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;c813f42e-3dea-4355-ab13-eb5ef6e4ab0e&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;c813f42e-3dea-4355-ab13-eb5ef6e4ab0e&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T03:47:11+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;d4cad2af-192e-4336-bc2e-d7524459c137&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;d4cad2af-192e-4336-bc2e-d7524459c137&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:37:49+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;d70863b3-9f7f-401f-957e-cb46ed20a419&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;d70863b3-9f7f-401f-957e-cb46ed20a419&quot;,
+    &quot;firstName&quot;: &quot;Killy&quot;,
+    &quot;lastName&quot;: &quot;Williams&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T13:22:38+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;df756aba-f24d-4bff-acb7-e119bc20e0ec&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;df756aba-f24d-4bff-acb7-e119bc20e0ec&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 2,
+    &quot;expiration&quot;: &quot;2024-09-08T02:48:43+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 76.92308,
+    &quot;net&quot;: 1923.0769
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;f27618f9-6625-4ee0-873e-f3ff14a7e56b&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;f27618f9-6625-4ee0-873e-f3ff14a7e56b&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 0,
+    &quot;expiration&quot;: &quot;2024-09-08T03:35:59+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 38.46154,
+    &quot;net&quot;: 1961.5385
+  },
+  {
+    &quot;partitionKey&quot;: &quot;TestUser407&quot;,
+    &quot;sortKey&quot;: &quot;f38584aa-8674-478e-8a61-20d1a6774d5a&quot;,
+    &quot;username&quot;: &quot;TestUser407&quot;,
+    &quot;id&quot;: &quot;f38584aa-8674-478e-8a61-20d1a6774d5a&quot;,
+    &quot;firstName&quot;: &quot;Shawn&quot;,
+    &quot;lastName&quot;: &quot;Rs&quot;,
+    &quot;dependants&quot;: 1,
+    &quot;expiration&quot;: &quot;2024-09-08T15:47:57+00:00&quot;,
+    &quot;salary&quot;: 52000,
+    &quot;gross&quot;: 2000,
+    &quot;benefitsCost&quot;: 57.69231,
+    &quot;net&quot;: 1942.3077
+  }
+]
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">match responseStatus == karate.get('expectedStatus', 200)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response  == &quot;#[] expectedResponse&quot;</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+[
+  {
+    "scenarioDescription": "POST request missing first name",
+    "requestBody": {
+      "lastName": "Rs",
+      "dependants": 2
+    },
+    "expectedStatus": 400,
+    "expectedResponse": [
+      {
+        "memberNames": [
+          "FirstName"
+        ],
+        "errorMessage": "The FirstName field is required."
+      }
+    ]
+  },
+  {
+    "scenarioDescription": "POST request missing both first name and last name",
+    "requestBody": {
+      "dependants": 2
+    },
+    "expectedStatus": 400,
+    "expectedResponse" : [
+      {
+        "memberNames": [
+          "FirstName"
+        ],
+        "errorMessage": "The FirstName field is required."
+      },
+      {
+        "memberNames": [
+          "LastName"
+        ],
+        "errorMessage": "The LastName field is required."
+      }
+    ]
+  },
+  {
+    "scenarioDescription": "POST request missing last name",
+    "requestBody": {
+      "firstName": "Shawn",
+      "dependants": 2
+    },
+    "expectedStatus": 400,
+    "expectedResponse": [
+      {
+        "memberNames": [
+          "LastName"
+        ],
+        "errorMessage": "The LastName field is required."
+      }
+    ]
+  },
+  {
+    "scenarioDescription": "POST request missing dependants field",
+    "requestBody": {
+      "firstName": "Shawn",
+      "lastName": "Rs"
+    },
+    "expectedStatus": 200,
+    "expectedResponse": {
+      "partitionKey": "#string",
+      "sortKey": "#string",
+      "username": "#string",
+      "id": "#string",
+      "firstName": "#string",
+      "lastName": "#string",
+      "dependants": "#number",
+      "salary": "#number",
+      "gross": "#number",
+      "benefitsCost": "#number",
+      "net": "#number"
+    }
+  },
+  {
+    "scenarioDescription": "POST request with dependants field set to an unreasonably high number",
+    "requestBody": {
+      "firstName": "Shawn",
+      "lastName": "Rs",
+      "dependants": 33
+    },
+    "expectedStatus": 400,
+    "expectedResponse": [
+      {
+        "memberNames": [
+          "Dependants"
+        ],
+        "errorMessage": "The field Dependants must be between 0 and 32."
+      }
+    ]
+  },
+  {
+    "scenarioDescription": "POST request with dependants field set to a negative number",
+    "requestBody": {
+      "firstName": "Shawn",
+      "lastName": "Rs",
+      "dependants": -1
+    },
+    "expectedStatus": 400,
+    "expectedResponse" :
+    [
+      {
+        "memberNames": [
+          "Dependants"
+        ],
+        "errorMessage": "The field Dependants must be between 0 and 32."
+      }
+    ]
+  },
+  {
+    "scenarioDescription": "POST request with dependants field set to an extremely large number",
+    "requestBody": {
+      "firstName": "Shawn",
+      "lastName": "Rs",
+      "dependants": 1000000000
+    },
+    "expectedStatus": 405,
+    "expectedResponse": ""
+  },
+  {
+    "scenarioDescription": "POST request with an empty body",
+    "requestBody": {},
+    "expectedStatus": 400,
+    "expectedResponse": [
+      {
+        "memberNames": [
+          "FirstName"
+        ],
+        "errorMessage": "The FirstName field is required."
+      },
+      {
+        "memberNames": [
+          "LastName"
+        ],
+        "errorMessage": "The LastName field is required."
+      }
+    ]
+
+  }
+]

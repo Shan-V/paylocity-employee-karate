@@ -1,0 +1,104 @@
+[
+  {
+    "scenarioDescription": "PUT request with non-UUID type id (string format)",
+    "requestBody": {
+      "firstName": "any",
+      "lastName": "any",
+      "dependants": 1,
+      "id": "1234"
+    },
+    "expectedStatus": 405,
+    "expectedResponse": ""
+  },
+  {
+    "scenarioDescription": "PUT request with non-UUID type id (numeric format)",
+    "requestBody": {
+      "firstName": "any",
+      "lastName": "any",
+      "dependants": 1,
+      "id": 1234
+    },
+    "expectedStatus": 405,
+    "expectedResponse": ""
+  },
+  {
+    "scenarioDescription": "PUT request with non-UUID type id (empty string)",
+    "requestBody": {
+      "firstName": "any",
+      "lastName": "any",
+      "dependants": 1,
+      "id": ""
+    },
+    "expectedStatus": 405,
+    "expectedResponse": ""
+  },
+  {
+    "scenarioDescription": "PUT request with invalid UUID type id (non-UUID format)",
+    "requestBody": {
+      "firstName": "any",
+      "lastName": "any",
+      "dependants": 1,
+      "id": "375ceaca-b04c-4624-bbxx-7183dd5895xx"
+    },
+    "expectedStatus": 405,
+    "expectedResponse": ""
+  },
+  {
+    "scenarioDescription": "PUT request with invalid UUID type id",
+    "requestBody": {
+      "firstName": "any",
+      "lastName": "any",
+      "dependants": 1,
+      "id": "375ceaca-b04c-4624-baaa-7183dd5895dd"
+    },
+    "expectedStatus": 200,
+    "expectedResponse": {"partitionKey": "#string",
+      "sortKey": "#string",
+      "username": "#string",
+      "id": "#string",
+      "firstName": "#string",
+      "lastName": "#string",
+      "dependants": "#number",
+      "salary": "#number",
+      "gross": "#number",
+      "benefitsCost": "#number",
+      "net": "#number"
+    }
+  },
+  {
+    "scenarioDescription": "PUT request with dependants greater than 32",
+    "requestBody": {
+      "firstName": "any",
+      "lastName": "any",
+      "dependants": 10000,
+      "id": "#(employeeId)"
+    },
+    "expectedStatus": 400,
+    "expectedResponse": [
+      {
+        "memberNames": [
+          "Dependants"
+        ],
+        "errorMessage": "The field Dependants must be between 0 and 32."
+      }
+    ]
+  },
+  {
+    "scenarioDescription": "PUT request with dependants less than 0",
+    "requestBody": {
+      "firstName": "any",
+      "lastName": "any",
+      "dependants": -1,
+      "id": "#(employeeId)"
+    },
+    "expectedStatus": 400,
+    "expectedResponse": [
+      {
+        "memberNames": [
+          "Dependants"
+        ],
+        "errorMessage": "The field Dependants must be between 0 and 32."
+      }
+    ]
+  }
+]
