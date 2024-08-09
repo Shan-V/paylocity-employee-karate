@@ -1,10 +1,18 @@
 # Paylocity Employee Karate
 
-This is a Karate project for employee endpoints which exercises all CRUD operations for the endpoints.
+This is a Karate project for employee endpoints, covering all CRUD operations for the endpoints.
+
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+- [Running All Tests](#running-all-tests)
+  - [Test Status and Adjustments](#test-status-and-adjustments)
+- [Viewing Sample Test Reports](#viewing-sample-test-reports)
 
 ## Prerequisites
 
-- **Java 17**: Make sure Java 17 is installed and `JAVA_HOME` is set. Verify the installation by running:
+- **Java 17**: Ensure Java 17 is installed and `JAVA_HOME` is set. Verify the installation by running:
   ```sh
   java --version
   ```
@@ -15,7 +23,7 @@ This is a Karate project for employee endpoints which exercises all CRUD operati
   Java HotSpot(TM) 64-Bit Server VM (build 17.0.1+12-LTS-39, mixed mode, sharing)
   ```
 
-- **Apache Maven 3.9.6**: Make sure Maven is installed and part of the `PATH`. Verify the installation by running:
+- **Apache Maven 3.9.6**: Ensure Maven is installed and part of the `PATH`. Verify the installation by running:
   ```sh
   mvn --version
   ```
@@ -52,6 +60,12 @@ If the tests run successfully, a `cucumber-html-reports` folder will be generate
 To view the full report, open the `overview-features.html` file in a browser.
 
 For detailed logs, please refer to the `karate-log`.
+
+### Test Status and Adjustments
+
+All the tests are passing because they are asserted against the actual behavior of the application. This setup is intended to make it easier to observe test execution and review test reports.
+
+However, note that many tests are currently not passing. If the application behavior changes, you may need to update the `expectedStatus` and `expectedBody` in the files under the `karate/data/` folder to match the new expected outcomes.
 
 ## Viewing Sample Test Reports
 
